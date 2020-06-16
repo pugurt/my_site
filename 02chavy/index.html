@@ -8,8 +8,52 @@
 	<link rel="stylesheet" href="css.jquery.bxslider.css">
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
+	
+	<style>
+		.topMenu{
+			width: 100%; 
+			margin: 0 auto; text-align: center;
+			background-color: gray;
+			float: left; 
+			margin-top: 10px;
+		}
+		.topMenu .logo{
+			width: 100px;  text-align: left;
+			background-color: white;
+			float: left;
+
+		}
+		.topMenu .menuWrap{ 
+			width: 800px;
+			background-color: white; 
+			float: left
+		}
+		.menuWrap ul.menu > li {
+			width: 125px;
+			float: left; 
+			background-color: pink;
+			}
+		.menuTwo>li {
+			width: 100px;
+			float: right;
+			background-color: skyblue;}
+	</style>
+	
 </head>
 <body>
-	
+	<div class="topMenu clearfix">
+		<div class="logo clearfix"><h1>chavy</h1></div>
+		<nav class="menuWrap clearfix">
+			<ul class="menu clearfix">
+				<li><a href="#">홈</a></li>
+				<li><a href="#">메뉴1</a></li>
+				<li><a href="#">메뉴2</a></li>
+				<li><a href="#">메뉴3</a></li>
+			</ul>
+			<ul class="menuTwo clearfix">
+				<li><a href="#">로그인</a></li>
+				<li><a href="#">회원가입</a></li></ul>
+		</nav>
+	</div>
 </body>
 </html>
