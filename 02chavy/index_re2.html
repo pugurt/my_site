@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>재제에에엔장~~ 알려준다구~~~</title>
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<style>
+		header#header{
+			width: 1100px; height: 50px; 
+			margin: 0 auto; background:skyblue;
+		}
+		.box{
+			width: 100px;height: 10px;background: red;
+			padding-top: 10px;
+				/*마진톱을 첫번째에 쓰면 오류나니까 되도록이면 마진톱쓰는거 아니다*/
+		}
+		.box1{
+			width: 100px;height: 10px;background: blue;
+			margin-top: 10px;
+		}
+		.visual{}
+		.visual .view{
+			width: 1100px; position: relative; 
+			height: 700px; margin: 0 auto;}
+		.visual .slider li{overflow: hidden;}
+		.visual .slider img.img{position: absolute;
+			left: 50%; }
+		.visual	.visualTxt{position: absolute; top: 150px;width: 500px;}
+		.visual	.visualTxt h3{font-size: 2.5em; margin-bottom: 20px;}
+		.visual	.visualTxt p{margin-bottom: 20px;}
+		.visual	.visualTxt a{display: block; width: 200px;height: 60px;
+			background: #f00; color: white; 
+			border-radius: 40px; line-height: 60px;
+			text-align: center;}
+	</style>
+	<script>
+		$(document).ready(function(){
+			$(".slider").bxSlider({
+			// g흐어억 
+			});
+		});
+	</script>
+		
+</head>
+<!-- __________________________________________________________________ -->
+<body>
+	<header id="header">
+			<div class="box"></div>
+			<div class="box1"></div>
+	</header>
+	<div class="visual">
+		<ul class="slider">
+			<li> <!-- 여긴w100% -->
+				<div class="view">
+					<img src="images/img_01.jpg" alt="" class="img">
+					<div class="visualTxt">
+						<h3>가지마라 가지마라 나를두고 떠나지마라</h3>
+							<p>
+								오늘밤 술에 취한 마차타고 지친밤을 떠나가야ㅣ쥐
+								딱한 번만이라도 가지뭬뤠 날위에 웃어준다며어어언 거짓말이었대도 
+								가쥐뭬뤠 저 별을 따다줄텐데 
+							</p>
+						
+						<a href="#" class="btnA">로렘이</a>
+					</div>
+				</div>
+			</li>
+			<li> <!-- 여긴w100% -->
+				<div class="view">
+					<img src="images/img_01.jpg" alt="" class="img">
+				</div>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
