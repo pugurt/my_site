@@ -7,6 +7,7 @@
 
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/style.css">
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
 
@@ -143,6 +144,7 @@
 		height: 700px;
 		margin: 0 auto;
 		background: #f8f9ff;
+		margin-bottom: 60px;
 	}
 	.boxFourFour{
 		width: 1200px;
@@ -180,7 +182,7 @@
 		_line-height: 138px;
 		padding-top: 80px;
 		margin: 0 auto;
-		margin-bottom: 100px;
+		margin-bottom: 180px;
 	}
 	.boxFive h3{
 		font-size: 30px;
@@ -227,30 +229,141 @@
 	}
 	.boxSix li{
 		width: 1200px;
-		height: 90px; line-height: 90px;
+		line-height: 40px;
 		border: 1px solid #eee;
-		border-radius: 45px;
+		border-radius: 50px;
 		margin: 0 auto;
 		margin-bottom: 45px;
 		position: relative;
+
 	}
-	/*.boxSix ul li p{
-		position: absolute;
-		left: 10px;}                     
-	.boxSix img{
-		float: right;
-		margin-right: 100px;
-		line-height: 90px;
+	.boxSix li p{
+		float: left;
+		text-align:left; 
+	}
+	.boxSix li img{
 		position: absolute;
 		top: 30px;
-		left: 1100px;
+		right: 80px;
+	}
+
+/*--------------------여섯 번째 흰바탕--------------------*/
+	.boxSeven{
+		width: 100%;
+		height: 530px;
+		margin: 0 auto;
+		_background: #f8f9ff;
+		_margin-bottom: 60px;
+	}
+	.boxSevenSeven{
+		width: 1200px;
+		margin: 0 auto;
+	}
+	.boxSeven .mainTxtSeven{
+		width: 450px;
+		float: left;
+		_background: #ff0;
+	}
+	.boxSeven .mainTxtSeven h3{
+		font-size: 30px;
+		padding: 160px 0 40px 0; 
+
+	}
+	.boxSeven .mainTxtSeven p{
+		margin-bottom: 40px;
+	}
+	.boxSeven img{
+			float: right;
+			padding: 80px 0 40px 0;
+			}
+/*--------------------일곱 번째 흰바탕--------------------*/
+	.boxLast{
+		width: 100%;
+		background: #f8f9ff;
+		
+	}
+	.boxLastLast{
+		width: 1200px;
+		margin: 0 auto;
+	}
+	.boxLastL{
+		float: left;
+		width: 300px;
+		_background: red;
+		padding: 80px 0;
+	}
+	.boxLastR{
+		float: right;
+		width: 500px;
+		_background: blue;
+		position: relative;
+		padding: 100px 0;
+		/*가운데 정렬 어찌 할꼬*/
+	}
+	.boxLastL img{
+		margin-bottom: 20px;
+	}
+	.boxLastLP {margin-bottom: 50px;}
+	
+
+	.boxLastROne{
+		width: 160px;
+		text-align: center;
+		_background: red;
+		position: absolute;
 		}
+	.boxLastROne p{
+		width: 50px;
+		padding-top: 30px;
+		margin: 0 auto;
+		}
+
+	.boxLastRTwo{
+		width: 160px;
+		text-align: center;
+		_background: red;
+		position: absolute;
+		left: 170px;
+		}
+	.boxLastRTwo p{
+		width: 50px;
+		padding-top: 30px;
+		margin: 0 auto;
+		}
+
+	.boxLastRSam{
+		width: 160px;
+		text-align: center;
+		_background: red;
+		position: absolute;
+		right: 0;
+		}
+	.boxLastRSam p{
+		width: 50px;
+		padding-top: 30px;
+		margin: 0 auto;
+		}
+	.line{
+		width: 1200px;
+		height: 1px;
+		background-color: #5f5f5f;
+		margin: 0 auto;
+	}
+	.lalaBox {
+		width: 1200px; margin: 0 auto; padding: 15px 0;
+		margin-bottom: 50px;}
+	.lalaBox p {float: left;}
+	.lalaBox li {float: right; margin-left: 30px;}
+
+
 	</style>
 	<script>
 		$(document).ready(function(){
 		$(".slider").bxSlider({
 			});
 		});
+
+
 	</script>
 
 </head>
@@ -389,24 +502,75 @@
 	<div class="boxSix">
 		<h3>피에스타! 내맘에 태양을 꾹 삼킨 채!<span>크아아악</span></h3>
 		<p>
-		있을 수 없다 오 늘이 월요일이라는 사실이 나는 좌절한다 아니 아게 무슨 소리냐 뭔가 들린거 같은데 볼륨 켜주세요 오늘 저녁 뭐먹지 사실 먹고 싶ㅈ빈 않아!!!!!!!!!
-		그치만ㅁ 배고프잖아!!!! 잠이나 자고 싶다.
+		피카츄 라이츄 파이리 꼬부기 버터플! 야도란! 새들의 고향!그 누가! 아무리! 자기네 땅이라 우겨도!
+		악어떼가 나온다 악어떼!
 		</p>
 
 		<ul>
 			<li class="clearfix">
-				<p>1. Does It work?</p> <img src="images/btn.jpg" alt="">
+				<p>1. Does It work?</p> 
+				<a href="#"><img src="images/btn.jpg" alt=""></a>
 			</li>
 			<li class="clearfix">
-				<p>2. What is the financial plan?</p><img src="images/btn.jpg" alt="">
+				<p>2. What is the financial plan?</p>
+				<a href="#"><img src="images/btn.jpg" alt=""></a>
 			</li>
 			<li class="clearfix">
-				<p>3. Can i know how ot work?</p><img src="images/btn.jpg" alt="">
+				<p>3. Can i know how ot work?</p>
+				<a href="#"><img src="images/btn.jpg" alt=""></a>
 			</li>
 			<li class="clearfix">
-			<p>	4. How many employers cain i expent?</p><img src="images/btn.jpg" alt="">
+				<p>	4. How many employers cain i expent?</p>
+				<a href="#"><img src="images/btn.jpg" alt=""></a>
 			</li>
 		</ul>
+	</div>
+	<!-- --------------------여섯 번째 흰바탕-------------------- -->
+	<div class="boxSeven clearfix">
+			<div class="boxSevenSeven">
+				<div class="mainTxtSeven">
+					<h3>수행한날짜지정<span>태그추가</span>텍스트 추가하세용</h3>
+					<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, cum!
+					</p>
+					<div class="btnC"><a href="">네 알겠습니다</a></div>
+				</div>
+				<img src="images/img_03.jpg" alt="">
+			</div>
+	</div>
+	<!-- --------------------일본 번째 흰바탕-------------------- -->
+	<div class="boxLast clearfix">
+			<div class="boxLastLast clearfix">
+				<div class="boxLastL">
+					<img src="images/img_04.jpg" alt="">
+					<p class="boxLastLP">13일 휴원임 14일 휴원임 리얼임 리얼임</p>
+					<p>줄 하나 하나</p>
+					<p>줄 둘! 둘!</p>
+					<p>줄 셋! 셋!</p>
+				</div>
+				<div class="boxLastR">
+					<div class="boxLastROne">
+						<h5>ABOUT</h5>
+						<p>내일부터 장마라고 하던데</p>
+					</div>
+					<div class="boxLastRTwo">
+						<h5>PRODUCT</h5>
+						<p>내일부터 장마라고 하던데</p>
+					</div>
+					<div class="boxLastRSam">
+						<h5>COMPANY</h5>
+						<p>내일부터 장마라고 하던데</p>
+					</div>
+				</div>
+			</div>
+			<div class="line"></div>
+			<div class=lalaBox>
+				<p>카피라이트 2020 아무튼 어쩌구 어쩌구 모든 리버스가 어쩌구</p>
+				<ul>
+					<li>Privacy Policy</li>
+					<li>Teams Of Service</li>
+				</ul>
+			</div>
 	</div>
 </body>
 </html>
