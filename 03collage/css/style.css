@@ -1,6 +1,16 @@
 @charset "utf-8";
 /*header*/
-header#header{height: 160px;}
+header#header{
+	height: 160px;
+	background-color: #0044af;}
+.Ttop{
+	width: 1200px;
+	margin: auto;
+	background: red;
+	}
+.TtopL ul{float: left;}
+.TtopR ul{float: right;}
+
 
 
 /*contents*/
