@@ -3,14 +3,16 @@
 header#header{
 	height: 160px;
 	background-color: #0044af;}
-.Ttop{
+.TtopWrap{
 	width: 1200px;
 	margin: auto;
 	background: red;
 	}
+.Ttop {w}
 .TtopL ul{float: left;}
-.TtopR ul{float: right;}
-
+.Ttop li{float: left;}
+.TtopTwo li {float: left;}
+.TtopTwo{float: right;}
 
 
 /*contents*/
