@@ -1,18 +1,56 @@
 @charset "utf-8";
 /*header*/
 header#header{
+	width: 100%;
 	height: 160px;
-	background-color: #0044af;}
+	background: #0044af;
+	}
 .TtopWrap{
 	width: 1200px;
+	line-height: 30px;
 	margin: auto;
-	background: red;
 	}
-.Ttop {w}
-.TtopL ul{float: left;}
-.Ttop li{float: left;}
-.TtopTwo li {float: left;}
-.TtopTwo{float: right;}
+.TtopOne {width: 400px; float: left;}
+.TtopOne li{
+	float: left;
+	background: #00163b; 
+	width: 120px;height: 30px;
+	margin-right: 2px;
+	text-align: center;
+	 }
+.TtopOne li a{
+	color: white;
+	display: block;
+	line-height: 30px;
+	}
+.TtopOne li a:hover{
+	color: black;
+	background: white;
+	display: block;
+	line-height: 30px;}
+
+.TtopTwo{
+	width:320px;
+	float: right;
+	_background:#f00;
+
+	}
+.TtopTwo li {
+	float: left;
+	padding-left: 10px;
+	font-size: 13px;
+	}
+.TtopTwo a{
+	color: white;
+	}
+.TtopTwo li img{padding: 7px 0;}
+.Btop {width: 1200px;}
+/*여기부터 하기~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/*한국대 로고*/
+.BtopWrap {
+	width: 100%;
+	background-color: #fff;}
 
 
 /*contents*/
