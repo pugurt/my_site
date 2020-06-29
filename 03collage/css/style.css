@@ -100,8 +100,7 @@ header#header{
 	background: #192d4e;
 	text-align: center;
 	}
-.sliderTxt a {
-	color: white;}
+.sliderTxt a {color: white;}
 
 .bx-wrapper {
     -moz-box-shadow: none;
@@ -110,6 +109,11 @@ header#header{
     border: 0 none;
     background: #fff;
 }
+/*하단 bx버튼*/
+/*.bx-wrapper .bx-prev {
+    left: 10px;
+    background: url(images/btn_04.jpg) no-repeat;
+}*/
 
 
 
@@ -152,24 +156,43 @@ header#header{
 	.containerFive .snsBoxR img{float: left; padding-top: 22px;}
 /*----------------------------------------------------------------*/
 #contents .container>ul>li:nth-child(6){background: skyblue;}
-	.containerSix {background-color: black; opacity: 0.8;}
+	.containerSix {background-color: black; opacity: 0.8; 
+				position: absolute; bottom: 0px; width: 100%;}
 	.containerSix h4{text-align: center; color: white; line-height: 50px;}
-	/*여기 까지 했!고! 이거 아래로 내려야 함!!!!*/
+	
 /*----------------------------------------------------------------*/
 #contents .container>ul>li:nth-child(7){background: orange;}
+	.containerSeven p img {position: absolute; top: 80px; left: 120px;}
 /*----------------------------------------------------------------*/
-#contents .container>ul>li:nth-child(8){background: aqua;width: 75%;}
+#contents .container>ul>li:nth-child(8){background: aqua;width: 75%; margin-bottom: 20px;}
+	#contents .container>ul>li:nth-child(8) p{width: 168px;height: 40px;
+		background: #fd4e42; position: absolute; top: 155px; left: 40px; 
+		border: 1px solid #fff; text-align: center; line-height: 40px;}
+	#contents .container>ul>li:nth-child(8) a{color: white; }
 
+/*하단 라인콘텐츠*/
+.bottomTbar{width: 1200px; margin: 0 auto;}
+	.bottomTbarOne{float: left; width: 25%; height: 60px; background: white;border-right: 1px solid #000;}
+	.bottomTbarOne h3{float: left;line-height: 60px; padding-left: 30px;}
+	.bottomTbarOne p{float: right;line-height: 60px; padding-right: 30px;}
+	.bottomTbarOne h3,
+	.bottomTbarOne p{font-size: 17px; font-weight: bold;}
+	/*.bottomTbarOneBOX{width: 1px;background: #eee;}*/
+
+	.bottomTbarTwo{ position: relative; float: left;width: 75%; height: 60px; background: blue; line-height: 60px;}
+	.bottomTbarTwo li{padding-left: 70px;}
+.bxBtn{position: absolute; top: 0; right: 0;}
 /*footer*/
 footer{
 	height: 200px;
 	width: 100%;
 }
-footer#footer{width: 700px; margin: 0 auto;font-size: 10px;}
-footer#footer ul li{width: 116px; float: left;  padding: 28px 0;}
-footer#footer p{color: #797979;line-height: 20px;}
+footer#footer{width: 700px; margin: 0 auto; font-size: 10px;}
+footer#footer ul li{width: 116px; float: left;  padding: 28px 0;font-weight: bold;}
+footer#footer p{color: #797979;line-height: 15px;}
 
 
 
 /*etc*/
 .smallFZ{font-size: 12px;}
+.lBtn{margin-bottom: 2px;}

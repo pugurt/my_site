@@ -11,8 +11,19 @@
 	<script src="js/jquery.bxslider.js"></script>
 	<script>
 		$(document).ready(function(){
-		$(".vSlider").bxSlider({pager:false});
-		$(".bSlider").bxSlider();
+			$(".vSlider").bxSlider({pager:false
+				});
+			$(".bSlider").bxSlider();
+			
+			var mSliderbtn=$(".mSlider").bxSlider({mode:"vertical", controls:false, pager:false});
+
+			$(".lBtn").click(function(){
+				mSliderbtn.goToNextSlide();
+			})
+
+			$(".rBtn").click(function(){
+				mSliderbtn.goToPrevSlide();
+			})
 			});
 	</script>
 </head>
@@ -142,18 +153,52 @@
 					</div>
 					<img src="images/image_03.jpg" alt="">
 				</li>
-				<li>07</li>
+				<li>
+					<div class="containerSeven">
+						<img src="images/image_04.jpg" alt="">
+						<p><img src="images/icon12.png" alt=""></p>
+					</div>
+				</li>
 				<li>
 					<div class="bSlider">
 						<div><img src="images/banner01_01.jpg" alt="">
+							<p><a href="#">입학사전예약▶</a></p>
 						</div>
 						<div><img src="images/banner01_01.jpg" alt="">
+							<p><a href="#">입학사전예약▶</a></p>
 						</div>
 					</div>
 				</li>
 			</ul>
+		</div> <!-- container -->
+		
+
+		<div class="bottomTbar clearfix">
+			<div class="bottomTbarOne">
+				<h3>학사일정</h3>
+				<p><2016 07></p>
+			</div>
+			<!-- <div class="bottomTbarOneBOX"></div> -->
+			<div class="bottomTbarTwo ">
+				<ul class="mSlider clearfix">
+					<li>
+						성적열람 및 상담신청은 본인이 수강한 교과목 설문조사를 모두 마친 후 확인이...
+					</li>
+					<li>
+						윙윙 돌아가는 세상도 나를 비웃듯이 계속 꿈틀대죠
+					</li>
+				</ul>
+				<div class="bxBtn">
+					<ul>
+						<li class="lBtn"><img src="images/btn_04.jpg" alt=""></li>
+						<li class="rBtn"><img src="images/btn_05.jpg" alt=""></li>
+					</ul>
+				</div>
+			</div>
 		</div>
 	</div>
+
+
 	<footer id="footer">
 		<ul class="clearfix">
 			<li><a href="#">|회사소개</a></li>
