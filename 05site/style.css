@@ -1,0 +1,56 @@
+@charset "utf-8";
+.blind , legend{display: block; position: absolute; left: 0; top: -9999px;}
+
+
+.main{width: 100%;height: 100%; background-image: url(images/image_01.jpg);}
+/*배경이미지 넣다가 끝났음 여기부터 함~~~!~!!~~!*/
+
+
+
+/*최상단 서치라인*/
+.topWrap{width: 100%; background: #0d72a6;}
+.topWrap .top{ width: 980px; height: 90px;margin: 0 auto; padding-top: 20px;position: relative; }
+.topWrap .top h2{
+	font-size: 40px;
+	color: white;position: absolute;left: 0; 
+	transform: translate(0%,-50%); top: 50%
+	}
+.topWrap .top .topWrap legend label input{	
+	border-radius: 15px; background: #fff;
+	position: absolute; left: 135px;
+	transform: translate(0%,-50%); top: 50%;
+	}
+.topWrap .top .topWrap .inp-field{
+	width: 290px;height: 30px; 
+	border: none; border-radius: 15px;
+	color: #999;font-size: 16px;
+	text-indent: 12px;
+	position: absolute; left: 135px;
+	transform: translate(0%,-50%); top: 50%;}
+.topWrap .top p{
+	font-weight: bold;
+	font-size: 30px;
+	color: white;
+	position: absolute; right: 150px; 
+	transform: translate(0%,-50%); top: 50%;
+	}
+.topWrap .top ul {
+	color: white;position: absolute;right:0; 
+	transform: translate(0%,-50%); top: 50%}
+.topWrap .top ul li{float: left; margin-right: 6px;}
+.topWrap .top ul li:last-child{margin-right: none;}
+
+/*상단메뉴*/
+.topMenu{border-bottom: 5px solid #0e73a7;}
+.topMenu ul{
+	width: 900px; height: 60px; margin: 0 auto;
+	position: relative;}
+.topMenu li{
+	float: left;
+	width: 148px; height: 60px;
+	margin: 0 auto; line-height: 60px;
+	border-right: 1px solid #e6e6e6;
+	text-align: center;}
+.topMenu li:first-child{border-left: 1px solid #e6e6e6;}
+.topMenu li a{font-weight: bold;}
+.topMenu ul img{position: absolute; top: 15px;left: 550px;}

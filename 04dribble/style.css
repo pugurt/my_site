@@ -1,0 +1,7 @@
+@charset "utf-8";
+.top{width: 1200px; margin: 0 auto; padding-top: 54px; margin-bottom: 60px;}
+.top h1{float: left;}
+.top ul{float: right;}
+.top ul li{float: left; padding-left: 55px;}
+
+.fastTrack{background: #f9f8fd; width: 1450px; height: 790px; margin: 0 auto; border-radius: 20px;}
