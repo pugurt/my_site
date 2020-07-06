@@ -6,9 +6,11 @@
 	<title>collage</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/colorbox.css">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
+	<script src="js/jquery.colorbox-min.js"></script>
 	<script>
 		$(document).ready(function(){
 			$(".vSlider").bxSlider({pager:false
@@ -24,7 +26,13 @@
 			$(".rBtn").click(function(){
 				mSliderbtn.goToPrevSlide();
 			})
+
+			$(".youtube").colorbox({
+				iframe:true,
+				innerWidth:600,
+				innerHeight:337	
 			});
+		});
 	</script>
 </head>
 <body>
@@ -156,7 +164,7 @@
 				<li>
 					<div class="containerSeven">
 						<img src="images/image_04.jpg" alt="">
-						<p><img src="images/icon12.png" alt=""></p>
+						<p><a href="https://www.youtube.com/embed/RbYva7AE8Aw" class="youtube" title="아무거나함"><img src="images/icon12.png" alt=""></a></p>
 					</div>
 				</li>
 				<li>

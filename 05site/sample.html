@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>검색</title>
+	<style>
+		*{padding: 0;margin: 0;box-sizing: border-box;}
+		html,body{height: 100%;}
+		body{
+			background-image: url(images/image_01.jpg);
+			background-repeat: no-repeat;
+			background-position: center;
+			-webkit-background-size: cover;
+			background-size: cover;
+			overflow-y:auto;
+			overflow-x:hidden;}
+		.searchInp{
+			width: 400px;height: 50px;
+			border: 3px solid #000;
+			border-radius: 25px;
+			text-indent: 80px;
+			font-size: 18px;
+			font-weight: bold;
+			background-color: #fff;
+			box-shadow: 5px 5px 5px 5px #4b4b4b;
+			position: relative;
+			z-index: 1;
+		}
+		.searchBtn{
+			width: 20px;height: 20px;
+			background-image: url(images/search.jpg);
+			text-indent: -9999px;
+			border : 0 none;
+			position: absolute; right: 20px; top: 15px;
+			z-index: 1;
+			}
+		.searchTitle{
+			width: 60px; height: 20px;
+			background-image: url(images/searchtext.jpg);
+			text-indent: -9999px; display: block;
+			/*인라인 태그라 디스플레 블럭을 먹여줘야 텍스트 인덴트 먹힘*/
+			position: absolute; top: 15px; left: 15px;
+			z-index: 2;
+		}
+		.wrap{
+			position: absolute; 
+			_background: skyblue;
+			width: 400px;height: 50px;
+			left: 50%; top: 50%;
+			transform: translate(-50%, -50%);
+			z-index: 1}
+
+		/*.anim{width: 100px;height: 100px;background: red;
+			position: absolute; top: -100px;}*/
+		.img01{
+			position: absolute;
+			right: -100px;top: -250px;
+			
+			animation-name: ani;
+			animation-duration: 1.5s;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
+			animation-timing-function: ease-in-out;
+		}
+
+		/*@keyframes ani{
+			0%{right: -100px;top: -250px;}
+			100%{right: -100px;top: -220px;}
+			}*/
+		
+
+		@keyframes ani{
+			0%{transform: translateY(-20px);}
+			100%{transform: translateY(0px);}
+		}
+
+		.img00{
+			position: absolute;
+			left: 0; bottom: 0;
+			
+			animation-name: air;
+			animation-duration:2s;
+			animation-fill-mode: forwards;
+			animation-direction: alternate;
+
+			}
+		@keyframes air{
+			0%{left: 0;bottom: 0;}
+			100%{left: 1000px; bottom: 1000px;}
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+			<img src="images/content2.png" alt="" class="img01">
+		<form action="#" method="get">
+			<label for="searchTxt" class="searchTitle">searchtitle</label>
+			<input type="text" id="searchTxt" name="search" placeholder="검색해용" class="searchInp">
+			<button type="submit" class="searchBtn">search</button>
+				<!-- submit=자료전송하는 폼 -->
+				<!-- inp는 인풋 약자로 임의로 쓴거임 걍... -->
+
+		</form>
+	</div>
+	<img src="images/reallyAir.png" alt="" class="img00">
+</body>
+</html>
