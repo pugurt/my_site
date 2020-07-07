@@ -4,9 +4,19 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta charset="UTF-8">
 	<title>문서 제목</title>
-	<link rel="stylesheet" href="reset.css">
-	<link rel="stylesheet" href="style.css">
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="reset.css"><!-- 리셋시트 -->
+	<link rel="stylesheet" href="css/jquery.bxslider.css"> 
+		<!-- bx슬라이더 얘가 스타일시트부다 위에 있어야 한다.-->
+	<link rel="stylesheet" href="style.css"><!-- 스타일시트 -->
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet"> <!-- 폰트 -->
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".vSlider").bxSlider({pager:false
+			});
+		})
+	</script>
 </head>
 <body>
 	<div class="topWrap">
@@ -98,21 +108,58 @@
 								<p>HILLTON HOTEL(PARIS)</p>
 								<img src="images/btn_06.png" alt="">
 							</div>
-							<img src="images/image_05.jpg" alt="">
+							<div class="vSlider">
+								<img src="images/image_05.jpg" alt="">
+								<img src="images/image_05.jpg" alt="">
+							</div>
 						</div>
 					</li>
 					<li>
-						
+						<div class="bboxTwoWrap">
+							<div class="bboxTwoWrapConver">
+								<p>관광명소(디즈니랜드)</p>
+								<img src="images/btn_06.png" alt="">
+							</div>
+							<div class="vSlider">
+								<img src="images/image_06.jpg" alt="">
+								<img src="images/image_06.jpg" alt="">
+							</div>
+						</div>
 					</li>
 					<li>
-						
+						<div class="bboxThreeWrap">
+							<div class="bboxThreeWrapConver">
+								<h4>20eh 구름 조금</h4>
+								<p>습도60% 바람 남남동 2m/s</p>
+							</div>
+							<img src="images/image_07.jpg" alt="">
+						</div>
 					</li>
 					<li>
-						
+						<div class="bboxFourWrap">
+							<div class="bboxFourWrapConver">
+								<h4>facebook 여행후기</h4>
+								<p>(임정희님)</p>
+							</div>
+							<div class="hugi">
+								<h5>"해외여행은 처음이었지만<br>이번 기회에 다녀올 수<br> 있었어요."</h5>
+								<p>프랑스 파리 자유여행</p>
+								<img src="images/btn_06.png" alt="">
+							</div>
+							<img src="images/image_08.jpg" alt="">
+						</div>
 					</li>
 					<li>
-						
-					</li>
+						<div class="bboxFiveWrap">
+							<img src="images/btn_07.png" alt="" class="plus_i">
+							<div class="bboxFiveWrapConver">
+								<h2>여행정보</h2>
+								<p>다양한 나라의 명소와 맛집 등 상세한 정보를 볼 수 있습니다.</p>
+							</div>
+							<img src="images/image_09.jpg" alt="">
+							
+						</div>
+					</li> 
 					<li>
 						
 					</li>

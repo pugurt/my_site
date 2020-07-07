@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<style>
+		.wrap{
+			width: 40px;height: 40px;
+			border: 3px solid #fff;
+			border-radius: 20px; box-sizing: border-box;
+			_background: skyblue;
+			position: absolute; left: 50%; top: 50%;
+			transform: translate(-50%,-50%);
+			transition: 0.3s;
+			z-index: 1;
+		}
+		.wrap .bar1,
+		.wrap .bar2{
+			width: 25px;height: 3px;
+			background: #fff;
+			border-radius: 2px;
+			position: absolute; left: 50%;top: 50%;
+			transform: translate(-50%,-50%);
+		}
+		.wrap .bar2{transform: translate(-50%,-50%) rotate(90deg);}
+
+		.photo{width: 300px;height: 300px;position: relative; overflow: hidden;}
+		.photo img{
+			position: absolute; 
+			left:50%; top: 50%; 
+			transform: translate(-50%,-50%) scale(1.5);
+			transition: 0.3s;}
+		
+		.bg{width: 100%;height: 100%; background: #000; position: relative;
+			opacity: 0;
+			transition: 0.3s;}
+
+		.photo:hover img{
+			transform: translate(-50%,-50%) scale(1.8); 
+			} 
+		.photo:hover .wrap{transform: translate(-50%,-50%)  rotate(180deg);}
+		.photo:hover .bg{opacity: 0.4;}
+	</style>
+</head>
+<body>
+	<div class="photo">
+		<img src="images/image_011.jpg" alt="" class="img">
+		<div class="wrap">
+			<div class="bar1"></div>
+			<div class="bar2"></div>
+		</div>
+		<div class="bg"></div>
+	</div>
+</body>
+</html>

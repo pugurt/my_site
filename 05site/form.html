@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<style>
+		fieldset{border: 0 none;}
+		legend{display: block; 
+			position: absolute; left: 0;top: -9999px;}
+		*{padding: 0;margin: 0;
+		  box-sizing: border-box;}
+		li{list-style: none}
+		a:visited,a:link{text-decoration: none; color: black;}
+		.clearfix:after{content: "";clear: both;display: block;}
+
+
+		.formLayer{width: 400px;margin: 0 auto;}
+		.formLayer label{display: block; padding: 5px;}
+		.formLayer fieldset{margin-bottom: 10px;}
+		.formLayer select{
+			width: 100%; height: 40px;
+			font-size: 1em;
+			text-indent: 10px;
+			border-radius: 10px;
+		}
+		.formLayer .left,
+		.formLayer .right{float: left; width: 195px;}
+
+		.formLayer .left{margin-right: 10px;}
+		.formLayer .left input,
+		.formLayer .right input{
+			width: 100%; height: 40px;
+			border-radius: 10px; text-indent: 10px;
+			font-size: 1.2em; border: 1px solid #aaa; font-weight: bold;}
+		.formLayer .tBtn{
+			width: 100%; height: 40px;
+			border: 0 none; cursor: pointer;
+			background: orange; color: white;
+			font-weight: bold; font-size: 1em;
+			border-radius: 10px;
+		}
+	</style>
+</head>
+<body>
+	<form action="#" method="get" class="formLayer">
+		<fieldset>
+			<legend>여행일정</legend>
+			<ul>
+				<li>
+					<label for="golo">가고싶은 나라를 선택하쉐요.</label>
+					<select name="nara" id="golo">
+						<option value="">선택하쒜이요</option>
+						<option value="미국">미국</option>
+						<option value="일본">일본</option>
+						<option value="중국">중국</option>
+					</select>
+				</li>
+				<li>
+					<div class="left">
+						<label for="sdate">출발일</label>
+						<input type="date" id="sdate">
+					</div>
+					<div class="right">
+						<label for="edate">출발일</label>
+						<input type="date" id="edate">
+					</div> <!-- input type date는 날짜 선택할때 있는 html 5 기능임 익스엔 없대... -->
+				</li>
+				<li>
+					<div class="left">
+						<label for="cgrade">좌석등급</label>
+						<select name="cgrade" id="cgrade">
+							<option value="비지니스">비지니스</option>
+							<option value="이코노미">이코노미</option>
+						</select>
+					</div>
+					<div class="right">
+						<label for="num">인원</label>
+						<input type="number" id="num">
+					</div> <!-- input type number는 숫자 카운트 할때 쓰는 타입... -->
+				</li>
+			</ul>
+		</fieldset>
+		<button type="submit" class="tBtn">검색하기</button>
+	</form>
+</body>
+</html>
