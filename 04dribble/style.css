@@ -1,7 +1,61 @@
 @charset "utf-8";
+*{font-family: 'Noto Sans KR', sans-serif;}
+
 .top{width: 1200px; margin: 0 auto; padding-top: 54px; margin-bottom: 60px;}
 .top h1{float: left;}
 .top ul{float: right;}
 .top ul li{float: left; padding-left: 55px;}
 
-.fastTrack{background: #f9f8fd; width: 1450px; height: 790px; margin: 0 auto; border-radius: 20px;}
+.fastTrack{background: #f9f8fd; width: 1450px; height: 790px; 
+	margin: 0 auto; border-radius: 20px; 
+	position: relative;
+	margin-bottom: 150px;}
+	.fastTrackBox{padding: 225px 0 0 125px;}
+	.fastTrackBox>h3{font-size: 50px; margin-bottom: 30px;}
+	.fastTrackBox>.ex_btn{
+		width: 290px; height: 75px;background: #444daa;
+		 text-align: center; 
+		line-height: 75px;}
+	.fastTrackBox>.ex_btn>a{color: white;}
+	.fastTrack>img{position: absolute; right: 0; top: 80px;}
+
+
+.SB{width: 1200px; margin: 0 auto;} /*w1200*/
+.why h1,
+.popular h1
+		{text-align: center;
+		margin-bottom: 100px;
+		font-size: 40px;}
+.why{margin-bottom: 145px;}
+.why ul>li,
+.popular ul>li{float: left; margin-right: 23px;}
+.why ul>li:last-child,.popular ul>li:last-child{margin-right: none;}
+	.whyOne,.whyTwo,.whyThree
+			{width: 377px; height: 429px; 
+			background: white; 
+			position: relative;
+			/*box-shadow: 5px #eee; 이거 그림자 왜 안먹니 */
+			border : 1px solid black;}
+	.whyOne img,
+	.whyTwo img,
+	.whyThree img{
+				position: absolute;
+				top: 40px; left: 80px;
+				/*transform: translate(-50% -50%);*/}
+	.whyOne h3,.whyTwo h3,.whyThree h3,
+	.whyOne p,.whyTwo p,.whyThree p{text-align: center;}
+	.whyOne h3,.whyTwo h3,.whyThree h3{padding-top: 277px; font-size: 30px; margin-bottom: 25px;}
+
+/*--------------------------------파퓰러--------------------------------*/
+	.popularOne img,
+	.popularTwo img,
+	.popularThree img{width: 100%;}
+	.popularOne,.popularTwo,.popularThree
+			{width: 377px; height: 429px; 
+			background: white; 
+			position: relative;
+			background: red;}
+	.popularOne h3,.popularTwo h3,.popularThree h3,
+	.popularOne p,.popularTwo p,.popularThree p{padding-left: 24px;}
+	.popularOne h3,.popularTwo h3,.popularThree h3{margin-bottom: 32px;}
+	.popularOne h3,.popularTwo h3,.popularThree h3{padding-top: 40px;font-size: 25px;}
