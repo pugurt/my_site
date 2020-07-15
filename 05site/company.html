@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<link rel="stylesheet" href="reset.css"><!-- 리셋시트 -->
+	<link rel="stylesheet" href="css/jquery.bxslider.css"> 
+		<!-- bx슬라이더 얘가 스타일시트부다 위에 있어야 한다.-->
+	<link rel="stylesheet" href="style.css"><!-- 스타일시트 -->
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet"> <!-- 폰트 -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			$(".vSlider").bxSlider({pager:false
+			});
+			$(".bSlider").bxSlider({
+				pager:false,
+				auto:true,
+				controls:false
+			});
+		})
+	</script>
+</head>
+<body>
+	<div class="topWrap">
+		<div class="top">
+			<h2>로고</h2>
+			<div class="topWrap">
+				<legend>검색검색</legend>
+				<label for="search" class="blind">검색</label>
+				<input type="text" id="search" name="search" placeholder="검색어를 아무튼 써보시오" class="inp-field">
+				<img src="images/searchtext.jpg" alt="" class="search">
+				<img src="images/search.jpg" alt="" class="bogi">
+			</div>
+			<p>+82 1234 5678</p>
+			<ul class="clearfix">
+				<li><a href="#"><img src="images/btn_01.jpg" alt=""></a></li>
+				<li><a href="#"><img src="images/btn_02.jpg" alt=""></a></li>
+				<li><a href="#"><img src="images/btn_03.jpg" alt=""></a></li>
+				<li><a href="#"><img src="images/btn_04.jpg" alt=""></a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="topMenu">
+		<ul class="clearfix">
+			<li><a href="#">여행도시</a></li>
+			<li><a href="#">호텔예약</a></li>
+			<li><a href="#">렌트카</a></li>
+			<li><a href="#">여행 TIP</a></li>
+			<li><a href="#">회사소개</a></li>
+			<li><a href="#">커뮤니티</a></li>
+			<img src="images/icon_01.jpg" alt="">
+		</ul>
+	</div>
+<!-- ---------------아래에 뭔가를 넣읍니다---------------------- -->
+
+
+<!-- ------------------------------------- -->
+	
+		<footer>
+			<ul class="clearfix">
+				<li><a href="#">이용약관</a></li>
+				<li><a href="#">개인정보취급방침</a></li>
+				<li><a href="#">사이트맵</a></li>
+				<li><a href="#">고객센터</a></li>
+				<li><a href="#">광고 및 제휴문의</a></li>
+			</ul>
+			<p>123-456 서울특별시 구로구 구로동 (주)미디어 사업자 등록번호: 123-456-78910 대표이사 : 홍길동 대표 번호 02-1234-5678<br>COPYRIGHT©2014 MEDIA TOUR. ALL RIGHT RESERVED.</p>
+		</footer>
+		</div>
+	</div>
+</body>
+</html>
