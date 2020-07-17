@@ -93,6 +93,31 @@
 .category{/*여기다가 호텔예약렌트카휴양지같은거 만들어줌*/
 	width: 480px;height: 300px; background:skyblue;
 	}
+	.pagerWrap{
+		position: absolute;top:0;
+		width: 150px; height: 300px;
+		background:#0097c9; }
+	.pagerWrap a{
+		display: block;color: #fff;
+		width: 150px;height: 77px;
+		padding: 25px 0 0 20px;
+		font-size: 18px;
+	}
+	.pagerWrap a.active{
+		background: #fff;color: #535353;}
+	.category{
+		width: 330px;position: absolute;left:150px; }
+	.category .vli{height: 300px;}
+
+/*--------------------------------↑슬라이드 할때 쓴 스타일↑--------------------------------*/
+	.formLayer{width: 330px;}
+	/*fieldset{width: 280px; margin-right: 35px;}*/
+	.nBtn{
+		width: 280px;height: 40px;
+		margin: 0 auto;
+		background: #e74e1f;
+		color: white;
+		font-size: 18px;}
 
 
 
@@ -285,3 +310,16 @@ footer ul li{float: left; margin-right: 25px;}
 footer ul li:nth-child(2){font-weight: bold; mb14}
 footer p{color: #757575; font-size: 8px;}
 
+
+
+/*===================================서브 페이지===================================*/
+.sub{
+	/*width: 100%;height: 100%; */
+	padding-top: 500px;
+	background-image:url(images/subimg01.jpg),url(images/00bg_dot.gif);
+	background-repeat: no-repeat,repeat;
+	background-position:center;
+	background-size: cover,auto;
+	position: relative;
+	/*이거 조절하다가 말음*/
+}
