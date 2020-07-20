@@ -112,7 +112,7 @@ fieldset{border: 0 none; margin-bottom: 10px;}
 
 /*--------------------------------↑슬라이드 할때 쓴 스타일↑--------------------------------*/
 	/*.formLayer{width: 330px;}*/
-	.formLayer{
+	.formLayer{ /*여기!!!!*/
 		width: 280px; margin-left: 35px;padding-top: 28px;
 		/*line-height: 35px;*/
 	}
