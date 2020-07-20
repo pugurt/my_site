@@ -18,12 +18,14 @@
 			$(".vSlider").bxSlider({
 				controls:false,
 		 		pagerCustom:".pagerWrap",
-		 		mode:"vertical"
+		 		mode:"vertical",
+		 		touchEnabled:false
 			});
 			$(".bSlider").bxSlider({
 				pager:false,
 				auto:true,
-				controls:false
+				controls:false,
+				
 			});
 		})
 	</script>
@@ -111,8 +113,9 @@
 											</div> <!-- 여기까지 해서!이제 스타일 시트 넣어줘야 함 상단에 있는 스타일도 시트에다가 옮겨주자 -->
 										</li>
 									</ul>
+									<button type="submit" class="nBtn">검색하기</button>
 								</fieldset>
-								<button type="submit" class="nBtn">검색하기</button>
+								
 							</li>
 						</form>
 						<li class="vli">2</li>
