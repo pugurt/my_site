@@ -112,8 +112,10 @@ fieldset{border: 0 none; margin-bottom: 10px;}
 
 /*--------------------------------↑슬라이드 할때 쓴 스타일↑--------------------------------*/
 	/*.formLayer{width: 330px;}*/
+	.vli{height: 300px;}
 	.formLayer{ /*여기!!!!*/
-		width: 280px; margin-left: 35px;padding-top: 28px;
+		width: 280px; margin-left: 35px;padding-top: 20px;
+		font-size: 12px;
 		/*line-height: 35px;*/
 	}
 	.nBtn{
@@ -122,6 +124,7 @@ fieldset{border: 0 none; margin-bottom: 10px;}
 		background: #e74e1f;
 		color: white;
 		font-size: 18px;
+
 	}
 	.formLayer label{display: block;padding:5px 0;}
     .formLayer select{
@@ -132,9 +135,11 @@ fieldset{border: 0 none; margin-bottom: 10px;}
    .formLayer input{
       width: 100%;height: 30px;
       color:#c8c8c8; border: 2px solid #ededed;
-      font-size:12px;text-indent:5px;
+      text-indent:5px;
    }
 
+   	.leftL,.rightR{float: left;width: 120px; margin-right: 10px;}
+	.naracate{margin-bottom: 20px;}
 
 
 
