@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+/*헤더*/
+#header{position: relative;}
+#header.main{height: 1950px;}
+#header_top{
+	width: 1260px; height: 50px; 
+	position: absolute; /*background-color: skyblue;*/
+	left: 50%; top: 40px;
+	transform: translateX(-50%);
+	z-index: 1;
+}
+#header_top h1{float: left;padding-left: 10px;}
+#header_top h1 a{color: white;}
+#header_top #main_menu{float: right;}
+	#main_menu>ul>li{float: left;}
+	#main_menu li a{
+		display: block; 
+		line-height: 50px;padding: 0 30px;
+		color: white; font-weight: bold;}
+	#main_menu a:after{
+		content: "";display: block; 
+		width: 0; height: 2px;
+		background: red;
+		transition: 0.3s; margin: 0 auto;}/*블럭단위 요소라 마진0오토 쓸수있는데 넣으면 가운데에서 쫙 퍼짐*/
+	#main_menu a:hover:after{width: 100%;}
+
+/*bxslider*/
+.slider_wrap ul li{height: 1005px;}
+.slider_wrap li.first{
+	background: url(../images/mainimg01.jpg) no-repeat center;
+	background-size: cover;
+}
+.slider_wrap li.second{
+	background: url(../images/mainimg02.jpg) no-repeat center;
+	background-size: cover;
+}
+.slider_wrap .slider_txt {/*다이렉트로 써주기 글자를 가운데로 보내버리자!*/
+	width: 700px; position: absolute;
+	left: 50%; top: 30%; transform: translateX(-50%);
+	color: white; text-align: center;
+	}
+.slider_wrap h3{font-size: 3.5em; text-shadow: 0 0 10px #000;}
+.slider_wrap h3:after{
+	content:""; display: block;
+	width: 300px;height: 1px;
+	background: #FFF; margin: 20px auto;}
+
+.slider_wrap .bx-wrapper { /*검사에서 복붙해와서 가져온거임*/
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 0 none;
+    background: none;
+    margin-bottom: 0;
+}
+
+.slider_wrap .bx-pager{bottom: 350px;}
+
+
+/*content*/
+#header .content{
+	width: 1260px; height: 1260px; 
+	position: absolute;
+	left: 50%;bottom: 0;
+	transform: translateX(-50%);
+	background-color: #fff;
+	}
+
+	.content>ul>li{float: left;width: 25%; height: 315px;border: 1px solid #000;
+		}
+	.content>ul>li:nth-child(2n){background: skyblue; }
