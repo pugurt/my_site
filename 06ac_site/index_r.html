@@ -9,6 +9,7 @@
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
 	<link rel="stylesheet" href="css/style2.css">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
 	<script>
 		$(document).ready(function(){
 			$(".slider").bxSlider();
@@ -19,50 +20,81 @@
 <body>
 	<header id="header" class="main">
 		<div id="header_top" class="clearfix">
-			<h1><a href="#">Logo</a></h1>
+			<h1><a href="#"><img src="images/logo.png" alt=""></a></h1>
 			<nav id="main_menu">
 				<ul class="clearfix">
-					<li><a href="#">회사소개</a></li>
-					<li><a href="#">윤리경영</a></li>
-					<li><a href="#">제품/기술</a></li>
-					<li><a href="#">지속가능서비스</a></li>
-					<li><a href="#">홍보채널</a></li>
-					<li><a href="#">인재채용</a></li>
+					<li><a href="#">게임소개</a></li>
+					<li><a href="#">이벤트</a></li>
+					<li><a href="#">이주 가이드</a></li>
+					<li><a href="#">상품정보</a></li>
 				</ul>
 			</nav>
-		</div>
-		<div class="slider_wrap">
-			<ul class="slider">
-				<li class="first">
-					<div class="slider_txt">
-						<h3>Lorem ipsum dolor sit.</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, illo?</p>
-					</div>
-				</li>
-				<li class="second">
-					<div class="slider_txt">
-						<h3>Lorem ipsum dolor sit.</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, illo?</p>
-					</div>
-				</li>
-			</ul>
-		</div>
-		<div class="content"><!-- 12개의 콘텐츠 만드는 곳 -->
-			<ul>
-				<li>1</li>
-				<li>2</li>
-				<li>3</li>
-				<li>4</li>
-				<li>5</li>
-				<li>6</li>
-				<li>7</li>
-				<li>8</li>
-				<li>9</li>
-				<li>10</li>
-				<li>11</li>
-				<li>12</li>
-			</ul>
+			<div class="toggleMenu">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
 		</div>
 	</header>
+	<div class="slider_wrap"><!-- 슬라이더 -->
+		<ul class="slider">
+			<li class="first">
+				<div class="slider_txt">
+					<h3>아무것도 없기에 무엇이든 할 수 있는 곳</h3>
+					<p>아무 것도 없는 이 섬에서 작은 불안과<br>커다란 설레임을 안고 새로운 생활이 시작됩니다.</p>
+				</div>
+			</li>
+			<li class="second">
+				<div class="slider_txt">
+					<h3>아무것도 없기에 무엇이든 할 수 있는 곳</h3>
+					<p>아무 것도 없는 이 섬에서 작은 불안과<br>커다란 설레임을 안고 새로운 생활이 시작됩니다.</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="content"><!-- 12개의 콘텐츠 만드는 곳 -->
+		<ul>
+			<li><a href="#"><h1>게임소식</h1><img src="images/icon_01.png" alt=""></a></li>
+			<li><a href="#"><img src="images/icon_02.png" alt=""></a></li>
+			<li><a href="#"><h1>이벤트</h1><img src="images/icon_03.png" alt=""></a></li>
+			<li><a href="#"><img src="images/img02.jpg" alt=""></a></li>
+			<li><a href="#"><img src="images/img03.jpg" alt=""></a></li>
+			<li><a href="#"><h1>스토어 <br>바로가기</h1><img src="images/icon_04.png" alt=""></a></li>
+			<li><a href="#"><img src="images/img04.jpg" alt=""></a></li>
+			<li><a href="#"><img src="images/switch_ac.png" alt=""></a></li>
+			<li><a href="#"><img src="images/img06.jpg" alt=""></a></li>
+		</ul>
+	</div>
+	<div class="bg"><!-- 배경넣을곳 -->
+		<ul>
+			<li><img src="images/img07.png" alt=""></li>
+			<li><img src="images/img08.png" alt="">
+				<div class="bgLiWrap">
+					<ul class="clearfix">
+						<li><a href="#"><img src="images/icon_05.png" alt=""></a></li>
+						<li><a href="#"><img src="images/icon_06.png" alt=""></a></li>
+						<li><a href="#"><img src="images/icon_07.png" alt=""></a></li>
+						<li><a href="#"><img src="images/icon_08.png" alt=""></a></li>
+						<li><a href="#"><img src="images/icon_09.png" alt=""></a></li>
+						<li><a href="#"><img src="images/icon_10.png" alt=""></a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<footer>
+		<div class="footerWrap clearfix">
+			<div class="footerL">
+				<ul class="clearfix">
+					<li><a href="#">이용약관</a></li>
+					<li><a href="#">개인정보취급방침</a></li>
+				</ul>
+				<p>ⓒ 2006 Nintendo of Korea Co., Ltd. All Rights Reserved.<br>상호명 : 한국닌텐도주식회사  |  대표자명 : 미우라 타카히로  |  사업자등록번호 : 120-87-03578</p>
+			</div>
+			<div class="footerR">
+				<p>고객지원 문의전화 : 1670-9900 (평일 오전 9시 30분~오후 5시 30분)<br>※ 토/일/공휴일/회사 정기휴일 및 특별휴일 제외</p>
+			</div>
+		</div>
+	</footer> 
 </body>
 </html>

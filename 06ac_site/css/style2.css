@@ -1,8 +1,11 @@
 @charset "utf-8";
 
+@media screen and (min-width: 923px){
+
+*{font-family: 'Noto Sans KR', sans-serif;}
 /*헤더*/
 #header{position: relative;}
-#header.main{height: 1950px;}
+#header.main{/*height: 1950px;*/}
 #header_top{
 	width: 1260px; height: 50px; 
 	position: absolute; /*background-color: skyblue;*/
@@ -21,18 +24,19 @@
 	#main_menu a:after{
 		content: "";display: block; 
 		width: 0; height: 2px;
-		background: red;
+		background: #13bfb0;
 		transition: 0.3s; margin: 0 auto;}/*블럭단위 요소라 마진0오토 쓸수있는데 넣으면 가운데에서 쫙 퍼짐*/
 	#main_menu a:hover:after{width: 100%;}
+	#header_top .toggleMenu{display: none;}
 
 /*bxslider*/
 .slider_wrap ul li{height: 1005px;}
 .slider_wrap li.first{
-	background: url(../images/mainimg01.jpg) no-repeat center;
+	background: url(../images/slider_img1_1.jpg) no-repeat center;
 	background-size: cover;
 }
 .slider_wrap li.second{
-	background: url(../images/mainimg02.jpg) no-repeat center;
+	background: url(../images/slider_img1_1.jpg) no-repeat center;
 	background-size: cover;
 }
 .slider_wrap .slider_txt {/*다이렉트로 써주기 글자를 가운데로 보내버리자!*/
@@ -40,7 +44,8 @@
 	left: 50%; top: 30%; transform: translateX(-50%);
 	color: white; text-align: center;
 	}
-.slider_wrap h3{font-size: 3.5em; text-shadow: 0 0 10px #000;}
+.slider_wrap h3{font-size: 2.2em; text-shadow: 0 0 10px #000;}
+.slider_wrap p{text-shadow: 2px 2px 2px #191919;}
 .slider_wrap h3:after{
 	content:""; display: block;
 	width: 300px;height: 1px;
@@ -59,14 +64,85 @@
 
 
 /*content*/
-#header .content{
-	width: 1260px; height: 1260px; 
+.content{
+	width: 1260px; height: 945px; 
 	position: absolute;
-	left: 50%;bottom: 0;
+	left: 50%;top: 690px;
 	transform: translateX(-50%);
 	background-color: #fff;
 	}
 
-	.content>ul>li{float: left;width: 25%; height: 315px;border: 1px solid #000;
+	.content>ul>li{
+		float: left;
+		width: 25%; height: 315px;
 		}
-	.content>ul>li:nth-child(2n){background: skyblue; }
+	.content>ul>li:nth-child(1){background: #4cc176; position: relative;}
+	.content>ul>li:nth-child(1)>a>h1,
+	.content>ul>li:nth-child(3)>a>h1,
+	.content>ul>li:nth-child(6)>a>h1{
+		color: white;
+		transform: translate(-50%,-50%);
+		position: absolute;
+		top: 77%;left: 50%;
+		text-align: center;
+		width: 300px;
+	}
+	.content>ul>li:nth-child(1)>a>img,
+	.content>ul>li:nth-child(3)>a>img,
+	.content>ul>li:nth-child(6)>a>img{
+		transform: translate(-50%,-50%);
+		position: absolute;
+		top: 40%;left: 50%;
+	}
+	.content>ul>li:nth-child(8)>a>img{
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);}
+
+	.content>ul>li:nth-child(2){background-image: url(../images/img01.jpg);position: relative;}
+	.content>ul>li:nth-child(2)>a>img{
+		transform: translate(-50%,-50%);
+		position: absolute;
+		top: 50%;left: 50%;
+		filter: drop-shadow(3px 3px 3px #000);	
+	}
+	.content>ul>li:nth-child(3){background: #ff73a3; position: relative;}
+	.content>ul>li:nth-child(6){background: #ffd76d; position: relative;}
+	.content>ul>li:nth-child(8){width: 630px;position: relative;background-image: url(../images/img05.jpg);
+		cursor: pointer;}
+	.content>ul>li:nth-child(7),
+	.content>ul>li:nth-child(9){width: 630px; background-color: #f00;}
+	
+/*bg*/
+.bg{
+	height: 2670px;
+	background-image: url(../images/bg_01.jpg);}
+	.bg>ul{padding-top: 770px;}
+	.bg>ul>li{
+		width: 1200px;margin: 0 auto; padding-bottom: 120px;}
+	.bg>ul>li:nth-child(2){position: relative;}
+		.bgLiWrap{width: 940px; position: absolute;
+			transform: translate(-50%,-50%);
+			top: 55%; left: 52%;}
+
+		.bgLiWrap>ul>li{float: left; margin : 0 32px 32px 0;}
+		.bgLiWrap>ul>li:nth-child(3n){margin: 0;}
+
+footer{height: 120px; background: #827157; position: relative;}
+.footerWrap{width: 1200px; 
+			color: white;
+			position: absolute;
+			top: 50%;left: 50%;
+			transform: translate(-50%,-50%);
+			font-size: 12px;
+			line-height: 20px;
+		}
+.footerWrap>.footerL{float: left;}
+.footerWrap>.footerL>ul>li{
+	float: left; padding-right: 10px;margin-right: 10px;
+	border-right: 2px solid #fff;}
+.footerWrap>.footerL>ul>li>a{color: white; font-weight: bold;}
+.footerWrap>.footerR{float: right;}
+
+}/*pc버전 미디어 레이아웃*/
+/*크기 조절 관련 짜야 함 지웠음...*/
