@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-@media screen and (min-width: 923px){
+/*@media screen and (min-width: 923px){*/
 
 *{font-family: 'Noto Sans KR', sans-serif;}
 /*헤더*/
@@ -76,6 +76,10 @@
 		float: left;
 		width: 25%; height: 315px;
 		}
+	.content>ul>li:hover{
+		transform: scale(1.1);
+		transition: 0.3s;
+		z-index: 1;}
 	.content>ul>li:nth-child(1){background: #4cc176; position: relative;}
 	.content>ul>li:nth-child(1)>a>h1,
 	.content>ul>li:nth-child(3)>a>h1,
@@ -94,10 +98,23 @@
 		position: absolute;
 		top: 40%;left: 50%;
 	}
+
 	.content>ul>li:nth-child(8)>a>img{
 		position: absolute;
 		top: 50%;
-		transform: translateY(-50%);}
+		transform: translateY(-50%);
+
+		animation-name: dongD;
+		animation-duration: 1.5s;
+		animation-fill-mode: forwards;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+		animation-timing-function: ease;
+		}
+	@keyframes dongD{
+		0%{transform: translateY(-50%);}
+		100%{transform: translateY(-40%);}
+	}
 
 	.content>ul>li:nth-child(2){background-image: url(../images/img01.jpg);position: relative;}
 	.content>ul>li:nth-child(2)>a>img{
@@ -126,6 +143,10 @@
 			top: 55%; left: 52%;}
 
 		.bgLiWrap>ul>li{float: left; margin : 0 32px 32px 0;}
+		.bgLiWrap>ul>li:hover{
+		transform: scale(1.1);
+		transition: 0.3s;
+		z-index: 1;}
 		.bgLiWrap>ul>li:nth-child(3n){margin: 0;}
 
 footer{height: 120px; background: #827157; position: relative;}
@@ -143,6 +164,25 @@ footer{height: 120px; background: #827157; position: relative;}
 	border-right: 2px solid #fff;}
 .footerWrap>.footerL>ul>li>a{color: white; font-weight: bold;}
 .footerWrap>.footerR{float: right;}
+
+
+
+/*=============================서브 페이지===================================*/
+/*.sub_contentWrap{position: relative;z-index: 1;}*/
+.sub_Title>img{width: 100%;border-bottom: 2px solid #13bfb0;}
+.sub_content{width: 1200px; margin: 0 auto;background: #ddd;
+	}
+	.sub_content>ul>li{
+		float: left; background: #fff;
+		width: 225px;height: 60px;
+		border-radius: 10px 10px 0 0;
+		text-align: center;line-height: 60px;
+		font-weight: bold;
+		border-bottom: 2px solid #13bfb0;}
+	.sub_content>ul{}
+
+	.page1,.page2,.page4{display: none;}
+
 
 }/*pc버전 미디어 레이아웃*/
 /*크기 조절 관련 짜야 함 지웠음...*/
