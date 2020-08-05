@@ -12,8 +12,14 @@
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
 	<script>
 		$(document).ready(function(){
-			$(".slider").bxSlider();
-			//지정한 클래스 이름이 뭐니<라고 물어보는데 슬라이더라고 지었지
+			$(".page2,.page3,.page4").hide();
+			$(".sub_content>ul>li").click(function(){
+				var liNum = $(this).index();
+				console.log(liNum);
+				
+				$(".sub_content>ul>li").removeClass().eq(liNum).addClass("active");
+				$(".sub_page>div").hide().eq(liNum).fadeIn();
+			});
 		});
 	</script>
 </head>
@@ -42,22 +48,106 @@
 	<div class="sub_contentWrap">
 		<div class="sub_content"> <!-- 4개의 뭐시기 -->
 			<ul class="clearfix">
-				<li>게임소식</li>
+				<li class="active">게임소식</li>
 				<li>이벤트</li>
 				<li>이주가이드</li>
 				<li>상품정보</li>
 			</ul>
 			<div class="sub_page">
-				<div class="page1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, optio?</div>
-				<div class="page2">Dolor, ratione praesentium cupiditate iure reprehenderit! Exercitationem reprehenderit nobis harum?</div>
-				<div class="page3">
-					<div class="page3_main">
+				<div class="page1"><!-- 게임소식 -->
+						<ul class="clearfix">
+						<li><img src="images/sub_icon_02.png" alt=""></li>
+						<li><span> > </span> 게임소식</li>
+					</ul>
+					<div class="page1_one">
+						<img src="images/sub_icon_01.png" alt="">
+						<h3>게임소식</h3>
+						<p>게임 업데이트나 새로운 이야기는 이곳에 올라옵니다.</p>
+					</div>
+					<div class="page1_two">
+						<img src="images/sub_img04.jpg" alt="">
+					</div>
+				</div>
+				
+				<div class="page2"><!-- 이벤트 -->
+					<ul class="clearfix">
+						<li><img src="images/sub_icon_02.png" alt=""></li>
+						<li><span> > </span> 이벤트</li>
+					</ul>
+					<div class="page2_one">
+						<img src="images/sub_icon_01.png" alt="">
+						<h3>이벤트</h3>
+						<p>오늘은 어떤 일들이 일어날까?</p>
+					</div>
+					<div class="page2_two">
+						<img src="images/sub_img05.jpg" alt="">
+					</div>
+				</div>
+				
+				<div class="page3"><!-- 이주 가이드 -->
+					<ul class="clearfix">
+						<li><img src="images/sub_icon_02.png" alt=""></li>
+						<li><span> > </span> 이주가이드</li>
+					</ul>
+					<div class="page3_one">
 						<img src="images/sub_icon_01.png" alt="">
 						<h3>이주 가이드</h3>
 						<p>무인도에서 즐기는 자유로운 생활.<br>현실과 똑같이 시간이 흘러, 하루의 시간 변화나 사계절의 변화를 느낄 수 있습니다.</p>
 					</div>
+				
+					<div class="page3_two">
+						<img src="images/sub02.png" alt="">	
+						<ul class="clearfix">
+							<li>
+								<img src="images/sub_img01.png" alt="">
+								<h3>큰 집에서 살고 싶어</h3>
+								<p>비록 무인도 생활의 시작은 텐트지만<br>Nook inc.의 도움을 받아 집을 지을 수 있습니다.<br>좋아하는 가구로 집을 인테리어 해 보세요.<br>증축도 할 수 있고 외관도 자유롭게 바꿀 수 있습니다.</p>
+								</li>
+							<li>
+								<img src="images/sub_img02.png" alt="">
+								<h3>동물들과의 만남</h3>
+								<p>섬에 대한 소문을 듣고<br>개성 넘치는 동물들이 찾아옵니다.<br>대화를 나누고 편지도 주고받으면서<br>사이 좋게 지내면 기쁜 일이 생길지도 모릅니다.</p>
+							</li>
+							<li>
+								<img src="images/sub_img03.png" alt="">
+								<h3>뚝뚝뚝딱 DIY 라이프</h3>
+								<p>무인도의 풍부한 자연을 재료 삼아<br>도구나 가구 등 필요한 것은 DIY로 직접 만듭니다.<br>할 수 있는 일이 점점 많아져서<br>나중에는 섬을 통째로 꾸밀 수도 있어요!</p>
+							</li>
+						</ul>
+					</div>
 				</div>
-				<div class="page4">Doloribus minima dolores quos quia neque ad quidem, aliquam vel.</div>
+				<div class="page4"><!-- 상품정보 -->
+					<ul class="clearfix">
+						<li><img src="images/sub_icon_02.png" alt=""></li>
+						<li><span> > </span> 상품정보</li>
+					</ul>
+					<div class="page4_one">
+						<img src="images/sub_icon_01.png" alt="">
+						<h3>상품정보</h3>
+						<p>소프트웨어와 관련 상품에 대해 알려드릴게요</p>
+					</div>
+					<div class="page4_one">
+						<ul class="clearfix">
+							<li>
+								<!-- <div class="page4_two_L"> -->
+									<img src="images/sub_img06.png" alt="#">
+								<!-- </div> -->
+							</li>
+							<li>
+								<!-- <div class="page4_two_R"> -->
+									<p>Nintendo Switch 소프트웨어<br>
+										<span>모여봐요 동물의 숲</p>
+									<div class="page4_one_up">
+										<img src="images/sub_img08.jpg" alt="">
+									</div>
+									<div class="page4_one_bottom">
+										<img src="images/sub_img09.jpg" alt="#">
+									</div>
+								<!-- </div> -->
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
