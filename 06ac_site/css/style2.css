@@ -228,13 +228,17 @@ footer{height: 120px; background: #827157; position: relative;}
 	.page2_two>img
 	{padding-top: 80px;}
 
-	.page4{width: 1050px;}
+	.page4{width: 1050px; margin: 0 auto;}
 	.page4_one{margin-bottom: 80px;}
 	.page4_one>ul>li{float: left;}
 	.page4_one>ul>li:last-child{float: right;}
 	.page4_one>ul>li>p{font-size: 15px; font-weight: bold; color: #ea0012;}
 	.page4_one>ul>li>p>span{font-size: 25px;color: #3c3c3c;}
 		.page4_one_up{margin-bottom: 13px;}
+	.page4_one .onlineBtn{
+		background-color: red; 
+		width: 287px;height: 54px;
+		color: white;} /*여까지!!!*/
 
 
 
