@@ -256,3 +256,7 @@ footer{height: 120px; background: #827157; position: relative;}
 
 /*pc버전 미디어 레이아웃*/
 /*크기 조절 관련 짜야 함 지웠음...*/
+
+
+/*=============================서브 페이지 큐앤에이================================*/
+	.bg>#qna>img{margin: 0 auto; padding-top: 120px;}
