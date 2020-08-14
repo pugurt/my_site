@@ -3,17 +3,19 @@
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta charset="UTF-8">
-	<title>너굴로드(너굴로드 이미지 다운받아야 해용)</title>
+	<title>너굴로드(너굴로드 이미지 정렬해야 해용)</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
 	<link rel="stylesheet" href="css/style2.css">
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+	<style>
+		
+	</style>
 	<script>
 		$(document).ready(function(){
-			$(".slider").bxSlider();
-			//지정한 클래스 이름이 뭐니<라고 물어보는데 슬라이더라고 지었지
+			$(".mslider").bxSlider();
 		});
 	</script>
 </head>
@@ -25,9 +27,21 @@
 	</header>
 	
 	<div class="bg"><!-- 배경넣을곳 -->
-		<div id="qna">
-			<img src="images/qna.png" alt="">
+		<div class="mangaIndex">
+			<img src="images/comics/bg_manga__pc.png" alt="">
+			<div class="mangaBox">
+				<ul class="mslider">
+					<li><img src="images/comics/manga_860_1.jpg" alt="#"></li>
+					<li><img src="images/comics/manga_860_2.jpg" alt="#"></li>
+					<li><img src="images/comics/manga_860_3.jpg" alt="#"></li>
+					<li><img src="images/comics/manga_860_4.jpg" alt="#"></li>
+					<li><img src="images/comics/manga_860_5.jpg" alt="#"></li>
+					<li><img src="images/comics/manga_860_6.jpg" alt="#"></li>
+					<li><img src="images/comics/manga_860_7.jpg" alt="#"></li>
+				</ul>
+			</div>
 		</div>
+		
 	</div>
 	<footer>
 		<div class="footerWrap clearfix">
