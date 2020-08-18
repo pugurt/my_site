@@ -1,9 +1,12 @@
 @charset "utf-8";
 
 *{font-family: 'Noto Sans KR', sans-serif;}
+
+body.main{background-image: url(../images/bg_01.jpg);}
+
 /*헤더*/
 #header{position: relative;}
-#header.main{/*height: 1950px;*/}
+#header.main{height: 1750px;}
 #header_top{
 	width: 1260px; height: 50px; 
 	position: absolute; /*background-color: skyblue;*/
@@ -135,13 +138,10 @@
 	.content>ul>li:nth-child(9){width: 630px; background-color: #f00;}
 	
 /*bg*/
-.bg{
-	_height: 2670px;
-	background-image: url(../images/bg_01.jpg);}
-	.bg>ul{padding-top: 770px;}
-	.bg>ul>li{
-		width: 1200px;margin: 0 auto; padding-bottom: 120px;}
-	.bg>ul>li:nth-child(2){position: relative;}
+
+	.section .first{width: 1200px;margin: 0 auto; padding-bottom: 120px;}
+	.section .second{position: relative;}
+	.section .second>img{margin:0 auto;}
 		
 
 		.bgLiWrap>ul>li{float: left;}
@@ -273,8 +273,11 @@ footer{height: 120px; background: #827157; position: relative;}
 
 /*=============================서브 페이지 큐앤에이================================*/
 	.bg>#qna>img{margin: 0 auto; padding-top: 120px;}
+	.bg>#qna{background-image: url(../images/bg_01.jpg);}
 
 /*=============================서브 페이지 너굴로드================================*/
+	.magna_bg{background-image: url(../images/bg_01.jpg);}
+	/*흐어억 여기 배경 좀 수정하기*/
 	.mangaIndex{width: 900px; height: 1700px;margin: 0 auto;
 		position: relative; padding-top: 150px;
 		}
