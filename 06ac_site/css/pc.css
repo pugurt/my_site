@@ -283,3 +283,22 @@ footer{height: 120px; background: #827157; position: relative;}
 		.mangaBox{width: 900px; background: red;padding-top: 250px;}
 
 	
+/*토글메뉴*/
+.toggleMenu{
+			display: none; width: 40px;height: 40px;
+			border: 1px solid #fff; position: absolute;
+			top: 2.5px;right: 20px;}
+.toggleMenu div{
+			width: 28px;height: 5px;background-color: #fff;
+			position: absolute;left: 5px; border-radius: 5px;}
+.toggleMenu div.bar1{top: 7px;}
+.toggleMenu div.bar2{top: 17px;}
+.toggleMenu div.bar3{top: 27px;}
+.change div.bar1{
+			left: 50%; top: 50%; 
+			transform: translate(-50%,-50%) rotate(-45deg);}
+.change div.bar3{
+			left: 50%; top: 50%; 
+			transform: translate(-50%,-50%) rotate(45deg);}
+.change div.bar2{opacity: 0;}
+.visual img {width: 100%;}
