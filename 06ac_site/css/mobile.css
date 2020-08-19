@@ -80,11 +80,12 @@ body.main{background-image: url(../images/bg_01.jpg);}
 		width: 50%; height: 315px;
 		overflow: hidden;
 		}
+	.content>ul>li:nth-child(7),
+	.content>ul>li:nth-child(9){height: 241px;}
 	.content>ul>li:hover img{
 		transform: scale(1.1);
 		transition: 0.3s;
 	}
-/*	.content>ul>li a:hover{color: black} 우야 안됨?*/
 	.content>ul>li:nth-child(1){background: #4cc176; position: relative;}
 	.content>ul>li:nth-child(1)>a>h1,
 	.content>ul>li:nth-child(3)>a>h1,
@@ -162,8 +163,10 @@ body.main{background-image: url(../images/bg_01.jpg);}
 			background: #000; opacity: 0.6; top: 0;left: 0;
 			display: none;
 		}
-		#overLayer{position: fixed; top: 50%;left: 50%;
-			transform: translate(-50%,-50%);
+		#overLayer{position: fixed; 
+			width: 50%;height: 50%;
+			top: 0%;left: 0%;
+			transform: translate(00%,00%) scale(0.5);
 			display: none;}
 		/*모달 쓸거라서!!!!*/
 
@@ -276,15 +279,17 @@ footer{height: 120px; background: #827157; position: relative;}
 
 /*=============================서브 페이지 큐앤에이================================*/
 	.bg>#qna>img{margin: 0 auto; padding-top: 120px;}
+	.bg>#qna{background-image: url(../images/bg_01.jpg);}
 
 /*=============================서브 페이지 너굴로드================================*/
-	.mangaIndex{width: 900px; height: 1700px;margin: 0 auto;
-		position: relative; padding-top: 150px;
+	.magna_bg{background-image: url(../images/bg_01.jpg);}
+	/*흐어억 여기 배경 좀 수정하기*/
+	.mangaIndex{width: 90%; height: 1700px;margin: 0 auto;
+		position: relative; padding-top: 150px; 
 		}
 	.mangaIndex>img{position: absolute;
-		left: 50%; transform: translateX(-50%);}
-		.mangaBox{width: 900px; background: red;padding-top: 250px;}
-
+		left: 50%; transform: translateX(-50%);width: 100%;}
+		.mangaBox{width: 65%;padding-top: 130px; margin: 0 auto;}
 	
 /*토글메뉴*/
 .toggleMenu{

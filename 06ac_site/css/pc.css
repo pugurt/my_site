@@ -278,12 +278,12 @@ footer{height: 120px; background: #827157; position: relative;}
 /*=============================서브 페이지 너굴로드================================*/
 	.magna_bg{background-image: url(../images/bg_01.jpg);}
 	/*흐어억 여기 배경 좀 수정하기*/
-	.mangaIndex{width: 900px; height: 1700px;margin: 0 auto;
-		position: relative; padding-top: 150px;
+	.mangaIndex{width: 60%; height: 1700px;margin: 0 auto;
+		position: relative; padding-top: 150px; 
 		}
 	.mangaIndex>img{position: absolute;
 		left: 50%; transform: translateX(-50%);}
-		.mangaBox{width: 900px; background: red;padding-top: 250px;}
+		.mangaBox{width: 55%;padding-top: 250px; margin: 0 auto;}
 
 	
 /*토글메뉴*/
