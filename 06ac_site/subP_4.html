@@ -10,6 +10,20 @@
 	<script src="js/jquery.bxslider.js"></script>
 	<link rel="stylesheet" href="css/style2.css">
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+	<script>
+		$(document).ready(function(){
+			$(".toggleMenu").click(function(){
+				var toggle = $(this).attr("class");
+				if(toggle == "toggleMenu"){
+					$(".toggleMenu").addClass("change");
+					$("#main_menu").stop().animate({top:0},300);
+				}else{
+					$(".toggleMenu").removeClass("change");
+					$("#main_menu").stop().animate({top:"-100%"},300);
+					};
+			});
+		});
+	</script>
 </head>
 <body>
 	<header id="header">

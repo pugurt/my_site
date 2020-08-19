@@ -1,32 +1,33 @@
 @charset "utf-8";
-
+html,body{height: 100%;}
 body.main{background-image: url(../images/bg_01.jpg);}
 *{font-family: 'Noto Sans KR', sans-serif;}
 /*헤더*/
-#header{position: relative;}
-#header.main{height: 2630px;}
+#header{z-index: 99999;}
+#header.main{height: 2490px;}
 #header_top{
-	width: 100%; height: 50px; 
-	position: absolute; /*background-color: skyblue;*/
-	left: 50%; top: 40px;
-	transform: translateX(-50%);
-	z-index: 1;
-}
+   width: 100%; background-color: #88caa4;
+  /* background: #cdcdcd;*/
+	}
 #header_top h1{float: left;padding-left: 10px;}
 #header_top h1 a{color: white;}
-#header_top #main_menu{float: right;}
-	#main_menu>ul>li{float: left;}
-	#main_menu li a{
-		display: block; 
-		line-height: 50px;padding: 0 30px;
-		color: white; font-weight: bold;}
-	#main_menu a:after{
-		content: "";display: block; 
-		width: 0; height: 2px;
-		background: #ffc000;
-		transition: 0.3s; margin: 0 auto;}/*블럭단위 요소라 마진0오토 쓸수있는데 넣으면 가운데에서 쫙 퍼짐*/
-	#main_menu a:hover:after{width: 100%;}
-	#header_top .toggleMenu{display: none;}
+ #main_menu{background-color: #13bfb0;
+                  position: fixed; 
+                  width: 100%;height:100%;
+                  top: -100%;z-index:99999;}
+   #main_menu>ul{width: 50%;margin: 100px auto}
+   #main_menu>ul>li{text-align: center;}
+   #main_menu li a{
+      display: block; 
+      line-height: 80px;padding: 0 30px;
+      color: white; font-weight: bold;}
+   #main_menu a:after{
+      content: "";display: block; 
+      width: 0; height: 2px;
+      background: #fff;
+      transition: 0.3s; margin: 0 auto;}/*블럭단위 요소라 마진0오토 쓸수있는데 넣으면 가운데에서 쫙 퍼짐*/
+   #main_menu a:hover:after{width: 100%;}
+   #header_top .toggleMenu{position: absolute;;z-index:99999;right:20px;}
 
 /*bxslider*/
 .slider_wrap ul li{height: 1005px;}
@@ -67,6 +68,7 @@ body.main{background-image: url(../images/bg_01.jpg);}
 
 
 /*content*/
+/*content*/
 .content{
 	width: 100%;
 	position: absolute;
@@ -80,12 +82,12 @@ body.main{background-image: url(../images/bg_01.jpg);}
 		width: 50%; height: 315px;
 		overflow: hidden;
 		}
-	.content>ul>li:nth-child(7),
-	.content>ul>li:nth-child(9){height: 241px;}
 	.content>ul>li:hover img{
 		transform: scale(1.1);
 		transition: 0.3s;
 	}
+	.content>ul>li:nth-child(7),
+	.content>ul>li:nth-child(9){height: 241px;}
 	.content>ul>li:nth-child(1){background: #4cc176; position: relative;}
 	.content>ul>li:nth-child(1)>a>h1,
 	.content>ul>li:nth-child(3)>a>h1,
@@ -140,24 +142,13 @@ body.main{background-image: url(../images/bg_01.jpg);}
 	.content>ul>li:nth-child(9) img{width: 100%;}
 	
 /*bg*/
-
-
-	
-	.section .first{margin: 0 auto; padding-bottom:50px;padding-left:10%;padding-right: 10%;}
+.section .first{margin: 0 auto; padding-bottom:50px;padding-left:10%;padding-right: 10%;}
 	.section img{width: 100%;}
 	.section .second{padding:0 10%;position: relative;height: 400px;}
 	.section .second>img{position: absolute;width: 90%;left:50%;transform:translateX(-50%);}
 	.section .second ul{width: 90%;margin: 0 auto;position: relative;top:100px;}
 	.section .second ul li{float: left;width:30%;margin-right:5%;margin-bottom: 20px;}
 	.section .second ul li:nth-child(3n){margin-right: 0;}
-	
-
-	
-		
-
-
-
-
 		#glayLayer{
 			position: fixed; width: 100%;height: 100%;
 			background: #000; opacity: 0.6; top: 0;left: 0;
@@ -166,17 +157,9 @@ body.main{background-image: url(../images/bg_01.jpg);}
 		#overLayer{position: fixed; 
 			width: 50%;height: 50%;
 			top: 0%;left: 0%;
-			transform: translate(00%,00%) scale(0.5);
+			transform: translate(00%,00%) scale(0.6);
 			display: none;}
 		/*모달 쓸거라서!!!!*/
-
-
-		
-		/*.bgLiWrap>ul>li:hover{
-		transform: scale(1.1);
-		transition: 0.3s;
-		z-index: 1;}
-		*/
 
 footer{height: 120px; background: #827157; position: relative;}
 .footerWrap{width: 100%; 
@@ -295,13 +278,13 @@ footer{height: 120px; background: #827157; position: relative;}
 .toggleMenu{
 			display: block; width: 40px;height: 40px;
 			border: 1px solid #fff; position: absolute;
-			top: 2.5px;right: 20px;}
-.toggleMenu div{
-			width: 28px;height: 5px;background-color: #fff;
-			position: absolute;left: 5px; border-radius: 5px;}
-.toggleMenu div.bar1{top: 7px;}
+			top: 20px;right: 20px; background: #13bfb0;border-radius: 10px;}
+.toggleMenu div{ /*체인지 함수 넣기*/
+			width: 26px;height: 5px;background-color: #fff;
+			position: absolute;left: 6px; border-radius: 5px;}
+.toggleMenu div.bar1{top: 8px;}
 .toggleMenu div.bar2{top: 17px;}
-.toggleMenu div.bar3{top: 27px;}
+.toggleMenu div.bar3{top: 26px;}
 .change div.bar1{
 			left: 50%; top: 50%; 
 			transform: translate(-50%,-50%) rotate(-45deg);}

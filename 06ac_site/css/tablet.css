@@ -3,33 +3,31 @@ html,body{height: 100%;}
 body.main{background-image: url(../images/bg_01.jpg);}
 *{font-family: 'Noto Sans KR', sans-serif;}
 /*헤더*/
-#header{position: relative;z-index: 99999;}
+#header{z-index: 99999;}
 #header.main{height: 2630px;}
 #header_top{
-	width: 100%; /*height: 50px; */
-	_position: absolute; /*background-color: skyblue;*/
-	left: 50%; top: 40px;
-	transform: translateX(-50%);
-	
-}
+   width: 100%; background-color: #88caa4;
+  /* background: #cdcdcd;*/
+	}
 #header_top h1{float: left;padding-left: 10px;}
 #header_top h1 a{color: white;}
- #main_menu{background-color: #f00;
-						position: fixed; 
-						width: 100%;height: 100%;
-						_top: -100%;z-index:99999;}
-	#main_menu>ul>li{float: left;display: none}
-	#main_menu li a{
-		display: block; 
-		line-height: 50px;padding: 0 30px;
-		color: white; font-weight: bold;}
-	#main_menu a:after{
-		content: "";display: block; 
-		width: 0; height: 2px;
-		background: #ffc000;
-		transition: 0.3s; margin: 0 auto;}/*블럭단위 요소라 마진0오토 쓸수있는데 넣으면 가운데에서 쫙 퍼짐*/
-	#main_menu a:hover:after{width: 100%;}
-	#header_top .toggleMenu{display: block;}
+ #main_menu{background-color: #13bfb0;
+                  position: fixed; 
+                  width: 100%;height:100%;
+                  top: -100%;z-index:99999;}
+   #main_menu>ul{width: 50%;margin: 100px auto}
+   #main_menu>ul>li{text-align: center;}
+   #main_menu li a{
+      display: block; 
+      line-height: 80px;padding: 0 30px;
+      color: white; font-weight: bold;}
+   #main_menu a:after{
+      content: "";display: block; 
+      width: 0; height: 2px;
+      background: #fff;
+      transition: 0.3s; margin: 0 auto;}/*블럭단위 요소라 마진0오토 쓸수있는데 넣으면 가운데에서 쫙 퍼짐*/
+   #main_menu a:hover:after{width: 100%;}
+   #header_top .toggleMenu{position: absolute;;z-index:99999;right:20px;}
 
 /*bxslider*/
 .slider_wrap ul li{height: 1005px;}
@@ -141,9 +139,6 @@ body.main{background-image: url(../images/bg_01.jpg);}
 	.content>ul>li:nth-child(9) img{width: 100%;}
 	
 /*bg*/
-
-
-	
 	.section .first{margin: 0 auto; padding-bottom:50px;padding-left:10%;padding-right: 10%;}
 	.section img{width: 100%;}
 	.section .second{padding:0 10%;position: relative;height: 650px;}
@@ -152,12 +147,6 @@ body.main{background-image: url(../images/bg_01.jpg);}
 	.section .second ul li{float: left;width:30%;margin-right:5%;margin-bottom: 20px;}
 	.section .second ul li:nth-child(3n){margin-right: 0;}
 	
-
-	
-		
-
-
-
 
 		#glayLayer{
 			position: fixed; width: 100%;height: 100%;
@@ -169,13 +158,6 @@ body.main{background-image: url(../images/bg_01.jpg);}
 			display: none;}
 		/*모달 쓸거라서!!!!*/
 
-
-		
-		/*.bgLiWrap>ul>li:hover{
-		transform: scale(1.1);
-		transition: 0.3s;
-		z-index: 1;}
-		*/
 
 footer{height: 120px; background: #827157; position: relative;}
 .footerWrap{width: 100%; 
@@ -198,10 +180,10 @@ footer{height: 120px; background: #827157; position: relative;}
 /*=============================서브 페이지===================================*/
 .sub_contentWrap{position: relative; }
 .sub_Title>img{width: 100%;border-bottom: 2px solid #13bfb0;}
-.sub_content{width: 1200px; margin: 0 auto;}
+.sub_content{width: 100%; margin: 0 auto;}
 	.sub_content>ul>li{
 		float: left; background: #fff;
-		width: 300px;height: 60px;
+		width: 60%;/*height: 60px;*/
 		border-radius: 10px 10px 0 0;
 		text-align: center;line-height: 60px;
 		font-weight: bold;
@@ -211,8 +193,9 @@ footer{height: 120px; background: #827157; position: relative;}
 		}
 	.active{background: #13bfb0 !important; color: white;}
 
-	.sub_page{position: relative; width: 1200px;}
+	.sub_page{position: relative; width: 100%;}
 	/*.page1,.page2,.page4{display: none;}*/
+	.page1>ul,.page2>ul,.page3>ul,.page4>ul{margin-left: 20px;}
 	.page1,.page2,.page3,.page4{padding-top: 40px;}
 	.page1>.page1_one>img,
 	.page2>.page2_one>img,
@@ -240,18 +223,19 @@ footer{height: 120px; background: #827157; position: relative;}
 	.page3>ul>li>span,
 	.page4>ul>li>span{color: #13bfb0;}
 	
-	.page3_two{width: 1200px; margin-bottom: 50px;}
-	.page3_two>img{padding: 100px 0 100px 0; margin: 0 auto;}
+	.page3_two{width: 100%; margin-bottom: 50px;}
+	.page3_two>img{width: 80%;padding: 100px 0 100px 0; margin: 0 auto;}
+	/*여기까지 했는데 모바일도 css적용해 주고 아래에 저 세개 정렬좀 해주면 끝!이고 상품소개만 좀 건드려주기*/
 	/*.page3_two>span{border-bottom: 2px solid #13bfb0;}*/
-	.page3_two>ul{border-top: 2px solid #13bfb0;}
+	.page3_two>ul{border-top: 2px solid #13bfb0; margin: 0 auto;}
 	.page3_two>ul>li{
 		width: 350px;padding-top: 50px;float: left; text-align: center;
-		margin-right: 50px;}
+		}
 	.page3_two>ul>li:last-child{margin-right: none;}
 	.page3_two>ul>li img{margin: 0 auto;}
 	.page3_two>ul>li h3{color: #13bfb0; font-size:20px; margin-bottom: 10px;}
 	
-	.page1_two{width: 1200px; }
+	.page1_two>img,.page2_two>img{width: 100%;}
 	.page1_two>img,
 	.page2_two>img
 	{padding-top: 80px;}
