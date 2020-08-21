@@ -225,14 +225,12 @@ footer{height: 120px; background: #827157; position: relative;}
 	
 	.page3_two{width: 100%; margin-bottom: 50px;}
 	.page3_two>img{width: 80%;padding: 100px 0 100px 0; margin: 0 auto;}
-	/*여기까지 했는데 모바일도 css적용해 주고 아래에 저 세개 정렬좀 해주면 끝!이고 상품소개만 좀 건드려주기*/
-	/*.page3_two>span{border-bottom: 2px solid #13bfb0;}*/
 	.page3_two>ul{border-top: 2px solid #13bfb0; margin: 0 auto;}
 	.page3_two>ul>li{
-		width: 350px;padding-top: 50px;float: left; text-align: center;
+		width: 100%;padding-top: 50px;float: left; text-align: center;
 		}
 	.page3_two>ul>li:last-child{margin-right: none;}
-	.page3_two>ul>li img{margin: 0 auto;}
+	.page3_two>ul>li img{margin: 0 auto; transform: scale(1.2);}
 	.page3_two>ul>li h3{color: #13bfb0; font-size:20px; margin-bottom: 10px;}
 	
 	.page1_two>img,.page2_two>img{width: 100%;}
@@ -241,11 +239,12 @@ footer{height: 120px; background: #827157; position: relative;}
 	{padding-top: 80px;}
 
 	/*.page4{width: 1200px; margin: 0 auto;}*/
-	.page4>ul{width: 1200px;}
+	.page4>ul{width: 100%;}
 	.page4_one{margin-bottom: 80px;}
-	.page4_one>ul{width: 1050px; margin: 0 auto;}
-	.page4_one>ul>li{float: left;}
-	.page4_one>ul>li:last-child{float: right;}
+	.page4_one>ul{ margin: 0 auto;}
+	.page4_one>ul>li{float: left;width: 100%;}
+	.page4_one>ul>li>img{width: 60%;margin: 0 auto;}
+	.page4_one>ul>li:last-child{float: right; padding: 0 30px;}
 	.page4_one>ul>li>p{font-size: 15px; font-weight: bold; color: #ea0012; margin-bottom: 20px;}
 	.page4_one>ul>li>p>span{font-size: 25px;color: #3c3c3c;}
 		.page4_one_up{margin-bottom: 23px;}
@@ -266,7 +265,6 @@ footer{height: 120px; background: #827157; position: relative;}
 
 /*=============================서브 페이지 너굴로드================================*/
 	.magna_bg{background-image: url(../images/bg_01.jpg);}
-	/*흐어억 여기 배경 좀 수정하기*/
 	.mangaIndex{width: 90%; height: 1700px;margin: 0 auto;
 		position: relative; padding-top: 150px; 
 		}
