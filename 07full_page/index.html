@@ -4,23 +4,124 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta charset="UTF-8">
 	<title>메인</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="css/fullpage.css">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap" rel="stylesheet">
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/jquery.fullPage.js"></script>
+	<script>
+		$(function(){
+			$("#fullpage").fullpage({
+				anchors:["a1st","a2st","a3st","a4st"],
+				menu:"#topMenu",
+				navigation:true, //이거 쓰면 좌측에 네비게이션 점점이 뜸
+				slidenavigation:true,
+				afterLoad:function(anchorslink,index){
+					console.log(anchorslink+", "+index);
+					if(index == 1){
+						//$("#page1").css("background-image","url(images/main_gif.gif)");
+					}
+
+					if(index == 2){
+						$("#onViewTwo").addClass("move");
+					}else{
+						$("#onViewTwo").removeClass("move");
+					}
+				}
+			});
+
+		});
+	</script>
 </head>
 <body>
-	<nav id="navTop"> 앵커버튼
-		<ul id="topMenu" class="">
-			<li data-menuanchor="a1st"><a href="#a1st">MENU1</a></li>
-			<li data-menuanchor="a2st"><a href="#a2st">MENU2</a></li>
-			<li data-menuanchor="a3st"><a href="#a3st">MENU3</a></li>
-			<li data-menuanchor="a4st"><a href="#a4st">MENU4</a></li>
+	<nav id="navTop"> <!-- 앵커버튼 -->
+		<ul id="topMenu" class="clearfix">
+			<li data-menuanchor="a1st"><a href="#a1st">STORY</a></li>
+			<li data-menuanchor="a2st"><a href="#a2st">MOVIE</a></li>
+			<li data-menuanchor="a3st"><a href="#a3st">CHARACTER</a></li>
+			<li data-menuanchor="a4st"><a href="#a4st">FOOTER</a></li>
 		</ul>
 	</nav>
 	<div id="fullpage">
-		<div class="section" id="page1"></div>
+		<div class="section" id="page1" data-anchor="#a1st">
+			<div class="main" id="onViewOne">
+				<a href="#"><img src="images/logo.png" alt=""></a>
+			</div>
+			<div class="scroll">
+				<a href="#a1st"><img src="images/btn_scroll.png" alt=""></a>
+				
+			</div>
+		</div><!-- 까지 메인 -->
+
+		<div class="section" id="page2" data-anchor="#a1st">
+			<div class="main" id="onViewTwo">
+					<h3>STORY</h3>
+					<p><span>‘인류’</span>와 <span>‘수인’</span>이 공존하는 사회.<br><br>
+						동물화 유전자와 수인자를 가진 수인들은 근현대 자연의 소실로 거처에서 쫓겨나<br>
+						인류 앞에 모습을 드러냈다. 인간들의 핍박 가운데 결국 일본에서는 <br>
+						<span>‘수인이 수인답게’</span> 살기 위한 수인특구 <span>『애니마시티』</span>가 설치된다.<br><br>
+						애니마시티 건립 10년, 세월이 흘러 이곳에 너구리 수인, 카게모리 미치루가 찾아온다.<br>
+						평범한 17세 인간 여고생으로 살아왔지만 어느 날 갑자기 수인이 된 미치루.<br>
+						<span>‘여기라면 자유롭게 살 수 있어!’</span>라고 기뻐하지만,  이곳에서 만난 늑대 수인 시로에게 <br>
+						애니마시티에도 이 거리에만 있는 위험이 곳곳에 도사리고 있음을 알게 된다.<br>
+						극도로 인간을 싫어하는 시로와 충돌을 반복하면서, 미치루는 그때까지 몰랐던 ‘수인’들의 삶을 배워간다.<br>
+						미치루는 왜 수인이 되어버렸을까?그 수수께끼를 쫓는 동안 예상치 못한 큰 사건에 휘말려 들게 된다.</p>
+			</div>
+			<div class="scroll">
+				<a href="#a2st"><img src="images/btn_scroll.png" alt=""></a>
+			</div>
+		</div><!-- 까지 스토리 -->
+
+		<div class="section" id="page3" data-anchor="#a2st">
+			<div class="main" id="onViewThree">
+				<h3>MOVIE</h3>
+				<div class="movie_1">
+					<iframe width="1000" height="565" src="https://www.youtube.com/embed/6JYqVqJowXg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<a href="#">more</a>
+			</div>
+			<div class="scroll">
+				<a href="#a3st"><img src="images/btn_scroll.png" alt=""></a>
+			</div>
+		</div><!-- 까지 무비 -->
+
+		<div class="section" id="page4" data-anchor="#a3st"> <!-- 캐릭터1 -->
+			<div class="main" id="onViewFour">
+				<h3>뭐라도 써</h3>
+				<p>뭐라도 썼슈</p>
+				<a href="#">more</a>
+				<!-- 이미지 따다가 끝남 -->
+			</div>
+			<div class="scroll">
+				<a href="#a4st"><img src="images/btn_scroll.png" alt=""></a>
+			</div>
+		</div><!-- 까지 캐릭터1 -->
+
+		<div class="section" id="page5" data-anchor="#a4st">
+			<div class="main" id="onViewFive">
+				<img src="images/logo.png" alt="">
+				<h3>뭐라도 써</h3>
+				<p>뭐라도 썼슈</p>
+				<a href="#">more</a>
+			</div>
+			<div class="scroll">
+				<a href="#a5st"><img src="images/btn_scroll.png" alt=""></a>
+			</div>
+		</div><!-- 까지 캐릭터2 -->
+
+		<div class="section" id="page7" data-anchor="#a5st">
+			<div class="main" id="onViewSix">
+				<img src="images/logo.png" alt="">
+				<h3>뭐라도 써</h3>
+				<p>뭐라도 썼슈</p>
+				<a href="#">more</a>
+			</div>
+			<div class="scroll">
+				<a href="#a1st"><img src="images/btn_scroll.png" alt=""></a>
+			</div>
+		</div><!-- 까지 푸터 -->
 	</div>
 </body>
 </html>
