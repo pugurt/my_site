@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta charset="UTF-8">
-	<title>메인</title>
+	<title>동영상 페이지 손보기/스크립트 전환 손보기</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="css/fullpage.css">
 	<link rel="stylesheet" href="css/reset.css">
@@ -13,7 +13,7 @@
 	<script src="js/jquery.fullPage.js"></script>
 	<script>
 		$(function(){
-			$("#fullpage").fullpage({
+			$("#fullpage").fullpage({ //풀페이지 스크립트
 				anchors:["a1st","a2st","a3st","a4st"],
 				menu:"#topMenu",
 				navigation:true, //이거 쓰면 좌측에 네비게이션 점점이 뜸
@@ -32,6 +32,19 @@
 				}
 			});
 
+		$("#page4").append("<div id='glayLayer'></div><div id='overLayer'></div>");
+
+			$("a.modal").click(function(e){
+				var aHref = $(this).attr("href");
+				
+				$("#glayLayer").show();
+				$("#overLayer").show().html("<img src='" +aHref+"'>");
+				e.preventDefault();
+			});
+			$("#glayLayer,#overLayer").click(function(){
+				$("#glayLayer").hide();
+				$("#overLayer").hide();
+			});
 		});
 	</script>
 </head>
@@ -88,12 +101,29 @@
 		</div><!-- 까지 무비 -->
 
 		<div class="section" id="page4" data-anchor="#a3st"> <!-- 캐릭터1 -->
-			<div class="main" id="onViewFour">
-				<h3>뭐라도 써</h3>
-				<p>뭐라도 썼슈</p>
-				<a href="#">more</a>
-				<!-- 이미지 따다가 끝남 -->
-			</div>
+			<nav id="page_black">
+				<ul>
+					<li><img src="images/c1_body_1.png" alt="미치루_인간"></li>
+					<li><img src="images/c1_nametag.png" alt="미치루_네임택"></li>
+					<li><a href="#"><img src="images/btn_visual_change.png" alt="미치루_비쥬얼체인지"></a></li>
+				</ul>	
+				<div class="main" id="onViewFour">
+					<h3>“이 마을은 수인의 낙원이 아니었어?”</h3>
+					<p>어떤 비밀을 안고 애니마시티로<br>도망쳐 들어온 여고생 너구리 수인.<br>의사소통 능력이 뛰어나고, 밝고 쾌활한 성격.</p>	
+				</div>
+				<div class="c_modal"><!-- 썸네일모달 -->
+					<ul class="clearfix">
+						<li><a href="images/modal_img/c1_01.jpg" class="modal"><img src="images/modal_img/c1_th_01.jpg" alt=""></a></li>
+						<li><a href="images/modal_img/c1_02.jpg" class="modal"><img src="images/modal_img/c1_th_02.jpg" alt=""></a></li>
+						<li><a href="images/modal_img/c1_03.jpg" class="modal"><img src="images/modal_img/c1_th_03.jpg" alt=""></a></li>
+						<li><a href="images/modal_img/c1_04.jpg" class="modal"><img src="images/modal_img/c1_th_04.jpg" alt=""></a></li>
+						<li><a href="images/modal_img/c1_05.jpg" class="modal"><img src="images/modal_img/c1_th_05.jpg" alt=""></a></li>
+						<li><a href="images/modal_img/c1_06.jpg" class="modal"><img src="images/modal_img/c1_th_06.jpg" alt=""></a></li>
+						<li><a href="images/modal_img/c1_07.jpg" class="modal"><img src="images/modal_img/c1_th_07.jpg" alt=""></a></li>
+						<li><a href="images/modal_img/c1_08.jpg" class="modal"><img src="images/modal_img/c1_th_08.jpg" alt=""></a></li>
+					</ul>
+				</div>
+			</nav>
 			<div class="scroll">
 				<a href="#a4st"><img src="images/btn_scroll.png" alt=""></a>
 			</div>
@@ -104,7 +134,6 @@
 				<img src="images/logo.png" alt="">
 				<h3>뭐라도 써</h3>
 				<p>뭐라도 썼슈</p>
-				<a href="#">more</a>
 			</div>
 			<div class="scroll">
 				<a href="#a5st"><img src="images/btn_scroll.png" alt=""></a>
