@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta charset="UTF-8">
-	<title>동영상 페이지 손보기/스크립트 전환 손보기</title>
+	<title>동영상 페이지 손보기/'이거 왜' 검색/푸터정렬</head>/title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="css/fullpage.css">
 	<link rel="stylesheet" href="css/reset.css">
@@ -14,7 +14,7 @@
 	<script>
 		$(function(){
 			$("#fullpage").fullpage({ //풀페이지 스크립트
-				anchors:["a1st","a2st","a3st","a4st"],
+				anchors:["a1st","a2st","a3st","a4st","a5st","a6st"],
 				menu:"#topMenu",
 				navigation:true, //이거 쓰면 좌측에 네비게이션 점점이 뜸
 				slidenavigation:true,
@@ -32,7 +32,7 @@
 				}
 			});
 
-		$("#page4").append("<div id='glayLayer'></div><div id='overLayer'></div>");
+		$("#page4 , #page5").append("<div id='glayLayer'></div><div id='overLayer'></div>"); 
 
 			$("a.modal").click(function(e){
 				var aHref = $(this).attr("href");
@@ -45,16 +45,19 @@
 				$("#glayLayer").hide();
 				$("#overLayer").hide();
 			});
+
 		});
 	</script>
 </head>
 <body>
 	<nav id="navTop"> <!-- 앵커버튼 -->
 		<ul id="topMenu" class="clearfix">
-			<li data-menuanchor="a1st"><a href="#a1st">STORY</a></li>
-			<li data-menuanchor="a2st"><a href="#a2st">MOVIE</a></li>
-			<li data-menuanchor="a3st"><a href="#a3st">CHARACTER</a></li>
-			<li data-menuanchor="a4st"><a href="#a4st">FOOTER</a></li>
+			<li data-menuanchor="a1st"><a href="#a1st">HOME</a></li>
+			<li data-menuanchor="a2st"><a href="#a2st">STORY</a></li>
+			<li data-menuanchor="a3st"><a href="#a3st">MOVIE</a></li>
+			<li data-menuanchor="a4st"><a href="#a4st">CHARACTER1</a></li>
+			<li data-menuanchor="a5st"><a href="#a5st">CHARACTER2</a></li>
+			<li data-menuanchor="a6st"><a href="#a6st">FOOTER</a></li>
 		</ul>
 	</nav>
 	<div id="fullpage">
@@ -63,12 +66,12 @@
 				<a href="#"><img src="images/logo.png" alt=""></a>
 			</div>
 			<div class="scroll">
-				<a href="#a1st"><img src="images/btn_scroll.png" alt=""></a>
+				<a href="#a2st"><img src="images/btn_scroll.png" alt=""></a>
 				
 			</div>
 		</div><!-- 까지 메인 -->
 
-		<div class="section" id="page2" data-anchor="#a1st">
+		<div class="section" id="page2" data-anchor="#a2st">
 			<div class="main" id="onViewTwo">
 					<h3>STORY</h3>
 					<p><span>‘인류’</span>와 <span>‘수인’</span>이 공존하는 사회.<br><br>
@@ -83,11 +86,11 @@
 						미치루는 왜 수인이 되어버렸을까?그 수수께끼를 쫓는 동안 예상치 못한 큰 사건에 휘말려 들게 된다.</p>
 			</div>
 			<div class="scroll">
-				<a href="#a2st"><img src="images/btn_scroll.png" alt=""></a>
+				<a href="#a3st"><img src="images/btn_scroll.png" alt=""></a>
 			</div>
 		</div><!-- 까지 스토리 -->
 
-		<div class="section" id="page3" data-anchor="#a2st">
+		<div class="section" id="page3" data-anchor="#a3st">
 			<div class="main" id="onViewThree">
 				<h3>MOVIE</h3>
 				<div class="movie_1">
@@ -96,17 +99,19 @@
 				<a href="#">more</a>
 			</div>
 			<div class="scroll">
-				<a href="#a3st"><img src="images/btn_scroll.png" alt=""></a>
+				<a href="#a4st"><img src="images/btn_scroll.png" alt=""></a>
 			</div>
 		</div><!-- 까지 무비 -->
 
-		<div class="section" id="page4" data-anchor="#a3st"> <!-- 캐릭터1 -->
+		<div class="section" id="page4" data-anchor="#a4st"> <!-- 캐릭터1 -->
 			<nav id="page_black">
 				<ul>
-					<li><img src="images/c1_body_1.png" alt="미치루_인간"></li>
-					<li><img src="images/c1_nametag.png" alt="미치루_네임택"></li>
-					<li><a href="#"><img src="images/btn_visual_change.png" alt="미치루_비쥬얼체인지"></a></li>
-				</ul>	
+					<li><img src="images/c1_body_1.png" alt="미치루_인간" id="img"></li>
+					<li><img src="images/c1_nametag_1.png" alt="미치루_네임택" id="nameTag">
+					</li>
+					<li onclick="change();"><img src="images/btn_visual_change.png" alt="미치루_비쥬얼체인지"></li>
+				</ul>
+
 				<div class="main" id="onViewFour">
 					<h3>“이 마을은 수인의 낙원이 아니었어?”</h3>
 					<p>어떤 비밀을 안고 애니마시티로<br>도망쳐 들어온 여고생 너구리 수인.<br>의사소통 능력이 뛰어나고, 밝고 쾌활한 성격.</p>	
@@ -124,33 +129,102 @@
 					</ul>
 				</div>
 			</nav>
-			<div class="scroll">
-				<a href="#a4st"><img src="images/btn_scroll.png" alt=""></a>
-			</div>
-		</div><!-- 까지 캐릭터1 -->
 
-		<div class="section" id="page5" data-anchor="#a4st">
-			<div class="main" id="onViewFive">
-				<img src="images/logo.png" alt="">
-				<h3>뭐라도 써</h3>
-				<p>뭐라도 썼슈</p>
-			</div>
 			<div class="scroll">
 				<a href="#a5st"><img src="images/btn_scroll.png" alt=""></a>
 			</div>
+		</div><!-- 까지 캐릭터1 -->
+
+		<div class="section" id="page5" data-anchor="#a5st"> <!-- 캐릭터2 -->
+			<nav id="page_black_Two">
+				<ul>
+					<li><img src="images/c2_body_2.png" alt="시로_인간" id="img_Two"></li>
+					<li><img src="images/c2_nametag_1.png" alt="시로_네임택" id="nameTag_Two">
+					</li>
+					<li onclick="change();"><img src="images/btn_visual_change_2.png" alt="시로_비쥬얼체인지"></li>
+				</ul>
+
+				<div class="main" id="onViewFive">
+					<h3>“수인의 평화는 내가 지키겠어”</h3>
+					<p>사람을 싫어하는 늑대 수인<br>어떤 흐름에서 어쩔 수 없이 미치루를 돌보길 보게 된다.<br>무뚝뚝하지만 상냥한 구석은 있다.<br>수인을 지킨다는 것을 신조로 삼는 사나이</p>	
+				</div>
+				<div class="b_modal"><!-- 썸네일모달 --> <!-- 이거 왜 글래이와 오버가 안내려오는가 -->
+					<ul class="clearfix">
+						<li><a href="images/modal_img/c2_01.jpg" class="modal"><img src="images/modal_img/c2_th_01.jpg" alt=""></a></li>
+						<li><a href="images/modal_img/c2_02.jpg" class="modal"><img src="images/modal_img/c2_th_02.jpg" alt=""></a></li>
+						<li><a href="images/modal_img/c2_03.jpg" class="modal"><img src="images/modal_img/c2_th_03.jpg" alt=""></a></li>
+						<li><a href="images/modal_img/c2_04.jpg" class="modal"><img src="images/modal_img/c2_th_04.jpg" alt=""></a></li>
+						<li><a href="images/modal_img/c2_05.jpg" class="modal"><img src="images/modal_img/c2_th_05.jpg" alt=""></a></li>
+						<li><a href="images/modal_img/c2_06.jpg" class="modal"><img src="images/modal_img/c2_th_06.jpg" alt=""></a></li>
+						<li><a href="images/modal_img/c2_07.jpg" class="modal"><img src="images/modal_img/c2_th_07.jpg" alt=""></a></li>
+						<li><a href="images/modal_img/c2_08.jpg" class="modal"><img src="images/modal_img/c2_th_08.jpg" alt=""></a></li>
+					</ul>
+				</div>
+			</nav>
+
+			<div class="scroll">
+				<a href="#a6st"><img src="images/btn_scroll.png" alt=""></a>
+			</div>
 		</div><!-- 까지 캐릭터2 -->
 
-		<div class="section" id="page7" data-anchor="#a5st">
-			<div class="main" id="onViewSix">
-				<img src="images/logo.png" alt="">
-				<h3>뭐라도 써</h3>
-				<p>뭐라도 썼슈</p>
-				<a href="#">more</a>
-			</div>
-			<div class="scroll">
-				<a href="#a1st"><img src="images/btn_scroll.png" alt=""></a>
+		<div class="section" id="page6" data-anchor="#a6st"> <!-- 푸터 -->
+			<div class="footerBG">
+				<div class="main" id="onViewSix">
+					<h3>“나는 바뀐다, <br>세상을 바꾼다.”</h3>
+				</div>
+				<div class="footer_C">
+					<div class="footer_C_T">
+						<h3>2020년 4월 8일</h3>
+						<p>방송개시</p>
+					</div>
+					<div class="footer_C_B">
+						<p><span>넷플릭스</span>에서 3월 21일부터<br>1화~ 6화 독점 선행전송</p>
+						<ul>
+							<li><img src="images/footer_link_1.jpg" alt="아마존링크"></li>
+							<li><img src="images/footer_link_2.jpg" alt="픽시브링크"></li>
+						</ul>
+					</div>
+				</div>
+				<div class="scroll">
+					<a href="#a1st"><img src="images/btn_scroll.png" alt=""></a>
+				</div>
+				<ul>
+					<li><img src="images/footer_bottom_1.png" alt=""></li>
+					<li><img src="images/footer_bottom_2.png" alt=""></li>
+				</ul>
 			</div>
 		</div><!-- 까지 푸터 -->
 	</div>
+
+<!-- ===================js===================-->
+	<script>
+		function change(){ //비쥬얼 체인지
+		var charaOne=document.getElementById('img');
+			if(charaOne.src.match("c1_body_2")){
+				charaOne.src="images/c1_body_1.png";
+			}else{
+				charaOne.src="images/c1_body_2.png";
+			}
+		var tagOne=document.getElementById('nameTag');
+			if(tagOne.src.match("c1_nametag_2")){
+				tagOne.src="images/c1_nametag_1.png";
+			}else{
+				tagOne.src="images/c1_nametag_2.png";
+			}
+	//==============================================
+		var charaTwo=document.getElementById('img_Two');
+			if(charaTwo.src.match("c2_body_1")){
+				charaTwo.src="images/c2_body_2.png";
+			}else{
+				charaTwo.src="images/c2_body_1.png";
+			}
+		var tagTwo=document.getElementById('nameTag_Two');
+			if(tagTwo.src.match("c2_nametag_2")){
+				tagTwo.src="images/c2_nametag_1.png";
+			}else{
+				tagTwo.src="images/c2_nametag_2.png";
+			}
+	}
+	</script>
 </body>
 </html>

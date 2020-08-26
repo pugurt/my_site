@@ -11,8 +11,11 @@ nav#navTop li{float: left;}
 nav#navTop a{display: block;line-height: 50px;text-align: center;
 			padding: 0 10px; font-size: 20px; color: #ff26a5; font-weight: bold;}
 
+/*배경 gif*/
 #page1{background-image: url(../images/main_gif.gif)}
 #page4{background-image: url(../images/c1_bg.gif)}
+#page5{background-image: url(../images/c2_bg.gif)}
+#page6{background-image: url(../images/footer_main.jpg)}
 
 .section{ /*'섹션'이 있어야 풀페이지 작동 함*/
 			background-repeat: no-repeat;
@@ -25,7 +28,7 @@ nav#navTop a{display: block;line-height: 50px;text-align: center;
 	transform: translate(-50%,-50%);}
 .scroll{
 	position: absolute; 
-	top: 90%;left: 50%;
+	/*bottom: 100%;*/left: 50%;
 	transform: translate(-50%,-50%);
 	filter: drop-shadow(2px 2px 0 #000);
 			animation-name: scrollTag;
@@ -36,8 +39,8 @@ nav#navTop a{display: block;line-height: 50px;text-align: center;
 			transition-timing-function: ease-in-out;}
 
 			@keyframes scrollTag{
-				0%{top: -80px;}
-				100%{top: -50px;}
+				0%{top: 90%;}
+				100%{top: 95%;}
 
 			}
 
@@ -55,25 +58,41 @@ nav#navTop a{display: block;line-height: 50px;text-align: center;
 #page2 .main#onViewTwo p span{color: #ff26a5; font-size: 30px; font-style:italic;}
 
 /*--------캐릭터--------*/
-#page_black .main{
+#page_black .main,#page_black_Two .main{
 				text-align: center;  
 				letter-spacing:-1px; line-height: 35px;
 				text-shadow: 2px 2px 0 #000;
 				font-weight: bold;}
-#page_black .main h3{color: #ff26a5; font-size: 36px; margin-bottom: 30px;font-style:italic;} 
-#page_black .main p{color: #fff; font-size: 25px;}
+#page_black .main h3,#page_black_Two .main h3{color: #ff26a5; font-size: 36px; margin-bottom: 30px;font-style:italic;} 
+#page_black .main p,#page_black_Two .main p{color: #fff; font-size: 25px;}
 
 /*캐릭터 모달*/
+/*1.미치루*/
 .c_modal{
 	width: 441px; /*height: 520px; */
 	position: absolute;right: 10%;
-	bottom: 10%;;
+	bottom: 10%;
+	/*z-index: 2*/;
 	}
 .c_modal ul li{
 	float: left; border: 1px solid #ff26a5;
 	margin: 0 10px 10px 0;
 	}
 .c_modal ul li:nth-child(2n){margin: 0;}
+
+/*2.시로*/
+.b_modal{
+	width: 441px; /*height: 520px; */
+	position: absolute;left: 10%;
+	bottom: 10%;
+	/*z-index: 2*/;
+	}
+.b_modal ul li{
+	float: left; border: 1px solid #ff26a5;
+	margin: 0 10px 10px 0;
+	}
+.b_modal ul li:nth-child(2n){margin: 0;}
+
 
 #glayLayer{
 	position: absolute; width: 100vw;height: 100vh;
@@ -92,7 +111,7 @@ nav#navTop a{display: block;line-height: 50px;text-align: center;
 #page_black>ul li:nth-child(2) img{width: 100vw;
 			position: absolute;}
 
-#page_black>ul li:nth-child(3) img{position: absolute; left: 25%; top: 45%;
+#page_black>ul li:nth-child(3) img{position: absolute; /*left: 25%; top: 45%;*/
 			animation-name: visualTag;
 			animation-duration: 0.8s;
 			animation-direction: alternate;
@@ -100,7 +119,44 @@ nav#navTop a{display: block;line-height: 50px;text-align: center;
 			transition-timing-function: linear;
 			}
 			@keyframes visualTag{
-				0%{left: 25%; top: 45%}
-				100%{left: 26%; top: 44%}
+				0%{left: 25%; top: 48%}
+				100%{left: 26%; top: 47%}
 			}
+#page_black>ul li:nth-child(3) img:hover{}
 	#onViewFour{position: absolute; top: 65%;left: 25%;}
+}
+
+/*2. 시로*/
+#page_black_Two{width: 100vw;height: 100vh; background: rgba(0,0,0,0.7);} /*이거 까만배경왜 안먹냐*/
+#page_black_Two>ul li:nth-child(1) img{position: absolute; right: 10%; top: 20%; z-index: 1;}
+#page_black_Two>ul li:nth-child(2) img{width: 100vw;
+			position: absolute; top: 0;}
+
+#page_black_Two>ul li:nth-child(3) img{position: absolute;
+			animation-name: visualTag_R;
+			animation-duration: 0.8s;
+			animation-direction: alternate;
+			animation-iteration-count: infinite;
+			transition-timing-function: linear;
+			}
+			@keyframes visualTag_R{
+				0%{right: 25%; top: 48%}
+				100%{right: 26%; top: 47%}
+			}
+	#onViewFive{position: absolute; top: 65%;right: 25%;}
+
+/*푸터*/
+.footerBG{width: 100vw;height: 100vh;}
+.footerBG>ul li img{width: 100vw;position: absolute;bottom: -70px;}
+#page6{letter-spacing:-2px;}
+#page6 .main h3{color: #ff26a5; font-size: 100px;font-style:italic; font-weight: bold;}
+#page6 .footer_C{}
+
+#page6 .footer_C_T h3{color:white; font-size: 60px;font-weight: bold;}
+#page6 .footer_C_T p{color:white;font-size: 36px;font-weight: bold;}
+#page6 .footer_C_B{display: flex; justify-content:space-between;}
+#page6 .footer_C_B ul{display: flex;}
+/*
+#page2 .main#onViewTwo h3{color: #ff26a5; font-size: 60px; margin-bottom: 30px;}
+#page2 .main#onViewTwo p{color: #fff; font-size: 25px;}
+#page2 .main#onViewTwo p span{color: #ff26a5; font-size: 30px; font-style:italic;}*/
