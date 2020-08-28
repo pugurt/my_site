@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta charset="UTF-8">
-	<title>반응형 손보기/메뉴 손보기/톱메뉴단추</title>
+	<title>반응형 손보기/캐릭터 애니정리</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="css/fullpage.css">
 	<link rel="stylesheet" href="css/reset.css">
@@ -21,14 +21,10 @@
 				slidenavigation:true,
 				afterLoad:function(anchorslink,index){
 					console.log(anchorslink+", "+index);
-					if(index == 1){
-						//$("#page1").css("background-image","url(images/main_gif.gif)");
-					}
-
-					if(index == 2){
-						$("#onViewTwo").addClass("move");
+					if(index ==6){
+						$("#footer_chara").addClass("footer_move");
 					}else{
-						$("#onViewTwo").removeClass("move");
+						$("#footer_chara").removeClass("footer_move");
 					}
 				}
 			});
@@ -77,8 +73,20 @@
 </head>
 <body>
 	<nav id="navTop"> <!-- 앵커버튼 -->
-		<ul id="topMenu" class="clearfix">
-			<li data-menuanchor="a1st"><a href="#a1st">HOME</a></li>
+		<div class="audio">
+			<audio controls autoplay loop id="myAudio"><!-- 오디오 -->
+				<source src="audio/tr01_Ready_to(inst).mp3" type="audio/mp3" >
+			</audio>
+			<ul>
+				<li><img src="images/btn_player.gif" alt="오디오버튼" id="bgAudio"></li>
+				<li><img src="images/btn_player_stop.gif" alt="오디오버튼" id="bgAudio_2"></li>
+			</ul>
+			
+		</div>
+		<!-- <iframe src="audio/tr01_Ready_to(inst).mp3" allow="autoplay" id="audio"></iframe> -->
+		<!-- 오디오 -->
+		<ul id="topMenu">
+			<li data-menuanchor="a1st"><a href="#a1st"><img src="images/top-M_logo.gif" alt="탑메뉴로고"></a></li>
 			<li data-menuanchor="a2st"><a href="#a2st">STORY</a></li>
 			<li data-menuanchor="a3st"><a href="#a3st">MOVIE</a></li>
 			<li data-menuanchor="a4st"><a href="#a4st">CHARACTER1</a></li>
@@ -212,6 +220,7 @@
 		</div><!-- 까지 캐릭터2 -->
 
 		<div class="section" id="page6" data-anchor="#a6st"> <!-- 푸터 -->
+			<div id="footer_chara"><img src="images/footer_main_1.png" alt="푸터_캐릭터"></div> 
 			<div class="footerBG">
 				<div class="main" id="onViewSix">
 					<h3>“나는 바뀐다, <br>세상을 바꾼다.”</h3>
@@ -231,7 +240,7 @@
 					<p>© 2020 TIRGGER  나카지마 카즈키 / BNA 제작위원회</p>
 				</div>
 				<div class="scroll">
-					<a href="#a1st"><img src="images/btn_scroll.png" alt=""></a>
+					<a href="#a1st"><img src="images/btn_scroll_2.png" alt=""></a>
 				</div>
 			</div>
 			<div class="footer_B">
@@ -243,6 +252,7 @@
 
 <!-- ===================js===================-->
 	<script>
+
 		function change(){ //비쥬얼 체인지
 		var charaOne=document.getElementById('img');
 			if(charaOne.src.match("c1_body_2")){
@@ -270,6 +280,17 @@
 				tagTwo.src="images/c2_nametag_2.png";
 			}
 	}
+	//==============================오디오=================================
+		var audio = document.getElementById("myAudio");
+			$("#bgAudio").on("click", function(){
+				//audio.pause();
+				audio.play();
+			});
+			$("#bgAudio_2").on("click", function(){
+				//audio.pause();
+				audio.pause();
+			});
+
 	</script>
 </body>
 </html>
