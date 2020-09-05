@@ -18,12 +18,14 @@
 			$(".vSlider").bxSlider({
 				controls:false,
 		 		pagerCustom:".pagerWrap",
-		 		mode:"vertical"
+		 		mode:"vertical",
+		 		touchEnabled:false
 			});
 			$(".bSlider").bxSlider({
 				pager:false,
 				auto:true,
-				controls:false
+				controls:false,
+				
 			});
 		})
 	</script>
@@ -54,7 +56,7 @@
 			<li><a href="#">호텔예약</a></li>
 			<li><a href="#">렌트카</a></li>
 			<li><a href="#">여행 TIP</a></li>
-			<li><a href="#">회사소개</a></li>
+			<li><a href="company.html">회사소개</a></li>
 			<li><a href="#">커뮤니티</a></li>
 			<img src="images/icon_01.jpg" alt="">
 		</ul>
@@ -68,12 +70,13 @@
 				</style>
 				<div class="category">
 					<ul class="vSlider">
-						<form action="#" method="get" class="formLayer"> <!-- 이거 어따 쓰는거지 -->
+						
 							<li class="vli">
+								<div class="formLayer"> <!-- 이거 어따 쓰는거지 -->
 								<fieldset>
 									<legend>여행일정</legend>
-									<ul>
-										<li>
+									<ul class="naracate">
+										<li> <!-- 여기!!!! -->
 											<label for="gonara">가고 싶은 나라를 선택하세요.</label>
 											<select name="nara" id="gonara">
 												<option value="">선택하세요</option>
@@ -84,37 +87,34 @@
 											</select>
 										</li>
 										<li>
-											<div class="naraL">
-												<label for="sdate">출발일</label>
+											<div class="leftL">
+												<label for="sdate">출발일
 												<input type="date" id="sdate">
 											</div>
-										</li>
-										<li>
-											<div class="naraR">
+											<div class="rightR">
 												<label for="edate">도착일</label>
 												<input type="date" id="edate">
 											</div>
 										</li>
-										<li>
-											<div class="naraL">
+										<li class="clearfix">
+											<div class="leftL">
 												<label for="cgrade">좌석등급</label>
 												<select name="cgrade" id="cgrade">
 													<option value="비지니스">비지니스</option>
 													<option value="이코노미">이코노미</option>
 												</select>
 											</div>
-										</li>
-										<li>
-											<div class="naraR">
+											<div class="rightR">
 												<label for="num">인원</label>
 												<input type="number" id="num">
-											</div> <!-- 여기까지 해서!이제 스타일 시트 넣어줘야 함 상단에 있는 스타일도 시트에다가 옮겨주자 -->
+											</div>
 										</li>
 									</ul>
+									<button type="submit" class="nBtn">검색하기</button>
 								</fieldset>
-								<button type="submit" class="nBtn">검색하기</button>
+								</div>
 							</li>
-						</form>
+						
 						<li class="vli">2</li>
 						<li class="vli">3</li>
 						<li class="vli">4</li>
@@ -176,7 +176,7 @@
 								<p>HILLTON HOTEL(PARIS)</p>
 								<img src="images/btn_06.png" alt="">
 							</div>
-							<div class="vSlider">
+							<div class="bSlider">
 								<img src="images/image_05.jpg" alt="">
 								<img src="images/image_05.jpg" alt="">
 							</div>
@@ -188,7 +188,7 @@
 								<p>관광명소(디즈니랜드)</p>
 								<img src="images/btn_06.png" alt="">
 							</div>
-							<div class="vSlider">
+							<div class="bSlider">
 								<img src="images/image_06.jpg" alt="">
 								<img src="images/image_06.jpg" alt="">
 							</div>
