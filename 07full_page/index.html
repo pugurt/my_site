@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>Full page - portfolio</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/fullpage.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap" rel="stylesheet">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<script src="js/jquery.fullPage.js"></script>
+	<script>
+		$(function(){
+			$("#fullpage").fullpage({ //풀페이지 스크립트
+				anchors:["a1st","a2st","a3st","a4st","a5st","a6st"],
+				menu:"#topMenu",
+				navigation:true, //이거 쓰면 좌측에 네비게이션 점점이 뜸
+				slidenavigation:true,
+				afterLoad:function(anchorslink,index){
+					console.log(anchorslink+", "+index);
+					if(index ==6){
+						$("#footer_chara").addClass("footer_move");
+					}else{
+						$("#footer_chara").removeClass("footer_move");
+					}
+				}
+			});
+		//==============================모달========================================
+		$("#page4 ").append("<div id='glayLayer'></div><div id='overLayer'></div>"); 
+		$("#page5").append("<div id='glayLayer1'></div><div id='overLayer1'></div>"); 
+
+			$("a.modal").click(function(e){
+				var aHref = $(this).attr("href");
+				
+				$("#glayLayer").show();
+				$("#overLayer").show().html("<img src='" +aHref+"'>");
+				e.preventDefault();
+			});
+			$("#glayLayer,#overLayer").click(function(){
+				$("#glayLayer").hide();
+				$("#overLayer").hide();
+			});
+			//==========
+			$("a.modal1").click(function(e){
+				var aHref = $(this).attr("href");
+				
+				$("#glayLayer1").show();
+				$("#overLayer1").show().html("<img src='" +aHref+"'>");
+				e.preventDefault();
+			});
+			$("#glayLayer1,#overLayer1").click(function(){
+				$("#glayLayer1").hide();
+				$("#overLayer1").hide();
+			});
+			//==============================슬라이드==================================
+
+			var slide_btn=$(".movie_list").bxSlider({
+				controls:false,
+				pager:false
+			});
+			$(".lBtn").click(function(){
+				slide_btn.goToPrevSlide();
+			})//앞으로 가자
+			$(".rBtn").click(function(){
+				slide_btn.goToNextSlide();
+			})//뒤으로 가자
+
+		}); //스크립트 끝!
+	</script>
+</head>
+<body>
+	<nav id="navTop"> <!-- 앵커버튼 -->
+		<div class="audio">
+			<audio controls autoplay loop id="myAudio"><!-- 오디오 -->
+				<source src="audio/tr01_Ready_to(inst).mp3" type="audio/mp3" >
+			</audio>
+			<ul>
+				<li><img src="images/btn_player.gif" alt="오디오버튼" id="bgAudio"></li>
+				<li><img src="images/btn_player_stop.gif" alt="오디오버튼" id="bgAudio_2"></li>
+			</ul>
+		</div>
+
+		<!-- 오디오 -->
+		<ul id="topMenu">
+			<li data-menuanchor="a1st"><a href="#a1st"><img src="images/top-M_logo.gif" alt="탑메뉴로고"></a></li>
+			<li data-menuanchor="a2st"><a href="#a2st">STORY</a></li>
+			<li data-menuanchor="a3st"><a href="#a3st">MOVIE</a></li>
+			<li data-menuanchor="a4st"><a href="#a4st">CHARACTER1</a></li>
+			<li data-menuanchor="a5st"><a href="#a5st">CHARACTER2</a></li>
+			<li data-menuanchor="a6st"><a href="#a6st">FOOTER</a></li>
+		</ul>
+	</nav>
+	<div id="fullpage">
+		<div class="section" id="page1" data-anchor="#a1st">
+			<div class="main" id="onViewOne">
+				<a href="#"><img src="images/logo.png" alt=""></a>
+			</div>
+			<div class="scroll">
+				<a href="#a2st"><img src="images/btn_scroll.png" alt=""></a>
+				
+			</div>
+		</div><!-- 까지 메인 -->
+
+		<div class="section" id="page2" data-anchor="#a2st"> <!-- 스토리 -->
+			<div class="main" id="onViewTwo">
+					<h3>STORY</h3>
+					<p><span>‘인류’</span>와 <span>‘수인’</span>이 공존하는 사회.<br><br>
+						동물화 유전자와 수인자를 가진 수인들은 근현대 자연의 소실로 거처에서 쫓겨나<br>
+						인류 앞에 모습을 드러냈다. 인간들의 핍박 가운데 결국 일본에서는 <br>
+						<span>‘수인이 수인답게’</span> 살기 위한 수인특구 <span>『애니마시티』</span>가 설치된다.<br><br>
+						애니마시티 건립 10년, 세월이 흘러 이곳에 너구리 수인, 카게모리 미치루가 찾아온다.<br>
+						평범한 17세 인간 여고생으로 살아왔지만 어느 날 갑자기 수인이 된 미치루.<br>
+						<span>‘여기라면 자유롭게 살 수 있어!’</span>라고 기뻐하지만,  이곳에서 만난 늑대 수인 시로에게 <br>
+						애니마시티에도 이 거리에만 있는 위험이 곳곳에 도사리고 있음을 알게 된다.<br>
+						극도로 인간을 싫어하는 시로와 충돌을 반복하면서, 미치루는 그때까지 몰랐던 ‘수인’들의 삶을 배워간다.<br>
+						미치루는 왜 수인이 되어버렸을까?그 수수께끼를 쫓는 동안 예상치 못한 큰 사건에 휘말려 들게 된다.</p>
+			</div>
+			<div class="scroll">
+				<a href="#a3st"><img src="images/btn_scroll.png" alt=""></a>
+			</div>
+		</div><!-- 까지 스토리 -->
+
+		<div class="section" id="page3" data-anchor="#a3st"> <!-- 무비 -->
+			<div class="main" id="onViewThree">
+				<h3>MOVIE</h3>
+				<div class="movie_btn">
+					<ul>
+						<li class="lBtn"><img src="images/btn_slide_L.png" alt=""></li>
+						<li class="rBtn"><img src="images/btn_slide_R.png" alt=""></li>
+					</ul>
+				</div>
+				<div class="movieWrap">
+					<ul class="movie_list">
+						<li> <!-- 트레일러1 -->
+							<iframe width="1000" height="563" src="https://www.youtube.com/embed/6JYqVqJowXg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</li>
+						<li> <!-- 트레일러2 -->
+							<iframe width="1000" height="563" src="https://www.youtube.com/embed/2D3Rqse2IXE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</li>
+						<li> <!-- op -->
+							<iframe width="1000" height="563" src="https://www.youtube.com/embed/3Okzra8Anr4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</li>
+						<li> <!-- ED -->
+							<iframe width="1000" height="563" src="https://www.youtube.com/embed/WWTFfEnMCCc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="scroll">
+				<a href="#a4st"><img src="images/btn_scroll.png" alt=""></a>
+			</div>
+		</div><!-- 까지 무비 -->
+
+		<div class="section" id="page4" data-anchor="#a4st"> <!-- 캐릭터1 -->
+			<nav id="page_black">
+				<ul>
+					<li><img src="images/c1_body_1.png" alt="미치루_인간" id="img"></li>
+					<li><img src="images/c1_nametag_1.png" alt="미치루_네임택" id="nameTag">
+					</li>
+					<li onclick="change();"><img src="images/btn_visual_change.png" alt="미치루_비쥬얼체인지"></li>
+				</ul>
+
+				<div class="main" id="onViewFour">
+					<h3>“이 마을은 수인의 낙원이 아니었어?”</h3>
+					<p>어떤 비밀을 안고 애니마시티로<br>도망쳐 들어온 여고생 너구리 수인.<br>의사소통 능력이 뛰어나고, 밝고 쾌활한 성격.</p>	
+				</div>
+				<div class="c_modal"><!-- 썸네일모달 -->
+					<ul class="clearfix">
+						<li><a href="images/modal_img/c1_01.jpg" class="modal"><img src="images/modal_img/c1_th_01.jpg" alt=""></a></li>
+						<li><a href="images/modal_img/c1_02.jpg" class="modal"><img src="images/modal_img/c1_th_02.jpg" alt=""></a></li>
+						<li><a href="images/modal_img/c1_03.jpg" class="modal"><img src="images/modal_img/c1_th_03.jpg" alt=""></a></li>
+						<li><a href="images/modal_img/c1_04.jpg" class="modal"><img src="images/modal_img/c1_th_04.jpg" alt=""></a></li>
+						<li><a href="images/modal_img/c1_05.jpg" class="modal"><img src="images/modal_img/c1_th_05.jpg" alt=""></a></li>
+						<li><a href="images/modal_img/c1_06.jpg" class="modal"><img src="images/modal_img/c1_th_06.jpg" alt=""></a></li>
+						<li><a href="images/modal_img/c1_07.jpg" class="modal"><img src="images/modal_img/c1_th_07.jpg" alt=""></a></li>
+						<li><a href="images/modal_img/c1_08.jpg" class="modal"><img src="images/modal_img/c1_th_08.jpg" alt=""></a></li>
+					</ul>
+				</div>
+			</nav>
+
+			<div class="scroll">
+				<a href="#a5st"><img src="images/btn_scroll.png" alt=""></a>
+			</div>
+		</div><!-- 까지 캐릭터1 -->
+
+		<div class="section" id="page5" data-anchor="#a5st"> <!-- 캐릭터2 -->
+			<nav id="page_black_Two">
+				<ul>
+					<li><img src="images/c2_body_2.png" alt="시로_인간" id="img_Two"></li>
+					<li><img src="images/c2_nametag_1.png" alt="시로_네임택" id="nameTag_Two">
+					</li>
+					<li onclick="change();"><img src="images/btn_visual_change_2.png" alt="시로_비쥬얼체인지"></li>
+				</ul>
+
+				<div class="main" id="onViewFive">
+					<h3>“수인의 평화는 내가 지키겠어”</h3>
+					<p>사람을 싫어하는 늑대 수인<br>어떤 흐름에서 어쩔 수 없이 미치루를 돌보길 보게 된다.<br>무뚝뚝하지만 상냥한 구석은 있다.<br>수인을 지킨다는 것을 신조로 삼는 사나이</p>	
+				</div>
+				<div class="b_modal">
+					<ul class="clearfix">
+						<li><a href="images/modal_img/c2_01.jpg" class="modal1"><img src="images/modal_img/c2_th_01.jpg" alt=""></a></li>
+						<li><a href="images/modal_img/c2_02.jpg" class="modal1"><img src="images/modal_img/c2_th_02.jpg" alt=""></a></li>
+						<li><a href="images/modal_img/c2_03.jpg" class="modal1"><img src="images/modal_img/c2_th_03.jpg" alt=""></a></li>
+						<li><a href="images/modal_img/c2_04.jpg" class="modal1"><img src="images/modal_img/c2_th_04.jpg" alt=""></a></li>
+						<li><a href="images/modal_img/c2_05.jpg" class="modal1"><img src="images/modal_img/c2_th_05.jpg" alt=""></a></li>
+						<li><a href="images/modal_img/c2_06.jpg" class="modal1"><img src="images/modal_img/c2_th_06.jpg" alt=""></a></li>
+						<li><a href="images/modal_img/c2_07.jpg" class="modal1"><img src="images/modal_img/c2_th_07.jpg" alt=""></a></li>
+						<li><a href="images/modal_img/c2_08.jpg" class="modal1"><img src="images/modal_img/c2_th_08.jpg" alt=""></a></li>
+					</ul>
+				</div>
+			</nav>
+
+			<div class="scroll">
+				<a href="#a6st"><img src="images/btn_scroll.png" alt=""></a>
+			</div>
+		</div><!-- 까지 캐릭터2 -->
+
+		<div class="section" id="page6" data-anchor="#a6st"> <!-- 푸터 -->
+			<div id="footer_chara"><img src="images/footer_main_1.png" alt="푸터_캐릭터"></div> 
+			<div class="footerBG">
+				<div class="main" id="onViewSix">
+					<h3>“나는 바뀐다, <br>세상을 바꾼다.”</h3>
+				</div>
+				<div class="footer_C">
+					<div class="footer_C_T">
+						<h3>2020년 4월 8일</h3>
+						<p>방송개시</p>
+					</div>
+					<div class="footer_C_B">
+						<p><span>넷플릭스</span>에서 3월 21일부터<br>1화~ 6화 독점 선행전송</p>
+						<ul>
+							<li><a href="https://www.amazon.co.jp/b?ie=UTF8&node=8070278051" target="_blank"><img src="images/footer_link_1.jpg" alt="아마존링크"></a></li>
+							<li><a href="https://www.pixiv.net/contest/bna" target="_blank"><img src="images/footer_link_2.jpg" alt="픽시브링크"></a></li>
+						</ul>
+					</div>
+					<p>© 2020 TIRGGER  나카지마 카즈키 / BNA 제작위원회</p>
+				</div>
+				<div class="scroll">
+					<a href="#a1st"><img src="images/btn_scroll_2.png" alt=""></a>
+				</div>
+			</div>
+			<div class="footer_B">
+				<img src="images/footer_bottom_1.png" alt="">
+				<img src="images/footer_bottom_2.png" alt="">
+			</div>
+		</div><!-- 까지 푸터 -->
+	</div>
+
+<!-- ===================js===================-->
+	<script>
+
+		function change(){ //비쥬얼 체인지
+		var charaOne=document.getElementById('img');
+			if(charaOne.src.match("c1_body_2")){
+				charaOne.src="images/c1_body_1.png";
+			}else{
+				charaOne.src="images/c1_body_2.png";
+			}
+		var tagOne=document.getElementById('nameTag');
+			if(tagOne.src.match("c1_nametag_2")){
+				tagOne.src="images/c1_nametag_1.png";
+			}else{
+				tagOne.src="images/c1_nametag_2.png";
+			}
+	//==============================================
+		var charaTwo=document.getElementById('img_Two');
+			if(charaTwo.src.match("c2_body_1")){
+				charaTwo.src="images/c2_body_2.png";
+			}else{
+				charaTwo.src="images/c2_body_1.png";
+			}
+		var tagTwo=document.getElementById('nameTag_Two');
+			if(tagTwo.src.match("c2_nametag_2")){
+				tagTwo.src="images/c2_nametag_1.png";
+			}else{
+				tagTwo.src="images/c2_nametag_2.png";
+			}
+	}
+	//==============================오디오=================================
+		var audio = document.getElementById("myAudio");
+			$("#bgAudio").on("click", function(){
+				//audio.pause();
+				audio.play();
+			});
+			$("#bgAudio_2").on("click", function(){
+				//audio.pause();
+				audio.pause();
+			});
+
+	</script>
+</body>
+</html>
