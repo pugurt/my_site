@@ -161,11 +161,11 @@ body.main{background-image: url(../images/bg_01.jpg);}
 		.bgLiWrap>ul>li:nth-child(3n){margin: none;}
 
 		
-		/*.bgLiWrap>ul>li:hover{
+		.bgLiWrap>ul>li:hover{
 		transform: scale(1.1);
 		transition: 0.3s;
 		z-index: 1;}
-		*/
+		
 
 footer{height: 120px; background: #827157; position: relative;}
 .footerWrap{width: 1200px; 
