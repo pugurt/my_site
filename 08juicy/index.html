@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@500&family=Jua&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="bg-main"> <!-- 헤더 -->
+		<div class="container">
+			<nav class="navbar navbar-expand-sm  navbar-dark">
+				<!-- logo -->
+				<a href="#" class="navbar-brand"><img src="images/logo.png" alt="메인로고"></a>
+				<!-- 토글메뉴 -->
+				<div class="nav-bar-toggler">
+					<i class="fa fa-bars"></i>
+				</div>
+				<!-- 탑메뉴 -->
+				<div id="topMenu" class="collapse navbar-collapse">
+					<ul class="nav navbar-nav ml-auto text-center">
+						<li class="nav-item"><a href="#" class="nav-link">회사소개</a></li>
+						<li class="nav-item"><a href="#" class="nav-link">쥬씨만의 강점</a></li>
+						<li class="nav-item dropdown">
+							<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">메뉴소개</a>
+							<div class="dropdown-menu">
+								<a href="#" class="dropdown-item">베스트 메뉴</a>
+								<a href="#" class="dropdown-item">생과일쥬스</a>
+								<a href="#" class="dropdown-item">커피</a>
+								<a href="#" class="dropdown-item">디저트</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a href="#"  class="nav-link dropdown-toggle" data-toggle="dropdown">쥬씨소식</a>
+							<div class="dropdown-menu">
+								<a href="#" class="dropdown-item">공지사항</a>
+								<a href="#" class="dropdown-item">이벤트</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</div>	
+	<div class="container"><!-- 슬라이드 -->
+		<ul class="slider">
+			<li><img src="images/slide_img01.jpg" alt=""></li>
+			<li><img src="images/slide_img02.jpg" alt=""></li>
+			<li><img src="images/slide_img03.jpg" alt=""></li>
+			<li><img src="images/slide_img04.jpg" alt=""></li>
+		</ul>
+	</div>
+	<section class="mainevent container mb-5"><!-- 이벤트 -->
+		<h3 class="bg-main-font">EVENT</h3>
+		<div class="row">
+			<div class="col-sm-6 col-md-3">
+				<div class="card">
+					<img src="images/main_evet_thb01.jpg" alt="">
+					<div class="card-body">
+						<h5 class="card-title"><오렌자이저> 시리즈 먹고, 마스크 받자!</h5>
+						<p class="card-text">2020.03.23 ~ 03.29<br>(선착순 마감)</p>
+						<button type="button" class="btn btn-danger"><a href="#">더보기</a></button>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-3">
+				<div class="card">
+					<img src="images/main_evet_thb02.jpg" alt="">
+					<div class="card-body">
+						<h5 class="card-title">쥬씨 생딸 먹고, 딸기 체험 농장으로 GO!!</h5>
+						<p class="card-text">2019.12.23 ~ 01.20<br>(추첨)</p>
+						<button type="button" class="btn btn-danger"><a href="#">더보기</a></button>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-3">
+				<div class="card">
+					<img src="images/main_evet_thb03.jpg" alt="">
+					<div class="card-body">
+						<h5 class="card-title">'딩귤딩귤' 댓글 달고, 딩귤 패키지 받자!</h5>
+						<p class="card-text">2019.12.18 ~ 12.01<br>(추첨)</p>
+						<button type="button" class="btn btn-danger"><a href="#">더보기</a></button>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-3">
+				<div class="card">
+					<img src="images/main_evet_thb04.jpg" alt="">
+					<div class="card-body">
+						<h5 class="card-title">신메뉴 인증하고, 가을 제주로 떠나자!</h5>
+						<p class="card-text">2019.09.11 ~ 09.30<br>(추첨)</p>
+						<button type="button" class="btn btn-danger"><a href="#">더보기</a></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="mainmenu bg-gray py-5"><!-- 메뉴 -->
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md-6" > <!-- 쥬스 -->
+					<div class="menuTxt clearfix mb-3">
+						<h3 class="bg-main-font mb-3">JUICE</h3>
+						<a href="#"><img src="images/icon01_plus.png" alt=""></a>
+					</div>
+					<div class="mainMwrap1 clearfix">
+						<img src="images/main_menu01.png" alt="">
+						<div class="mainMbox1">
+							<h4 class="a1-font font-weight-bold">생딸라떼</h4>
+							<p class="a1-font">부드러운 라떼와 생 딸기의<br>새콤달콤한 조합 <br>
+								<span class="a1-font">(해당 제품은 겨울 한정 메뉴입니다.)</span></p>
+							<button type="button" class="btn btn-danger"><a href="#">더보기</a></button>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-6" ><!-- 커피 -->
+					<div class="menuTxt clearfix mb-3">
+						<h3 class="bg-main-font mb-3">COFFEE</h3>
+						<a href="#"><img src="images/icon01_plus.png" alt=""></a>
+					</div>
+					<div class="mainMwrap1 clearfix">
+						<img src="images/main_menu02.png" alt="">
+						<div class="mainMbox1">
+							<h4 class="a1-font font-weight-bold">아메리카노</h4>
+							<p class="a1-font">M사이즈 단돈 1000원!<br>쥬씨 아메리카노 가격대비 최고! </p>
+							<button type="button" class="btn btn-danger"><a href="#">더보기</a></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="mainbanner"><!-- 배너 -->
+			<img src="images/main_banner.jpg" alt="">
+	</section>
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/jquery.bxslider.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> <!-- 팝퍼링크 -->
+<script src="js/bootstrap.min.js"></script><!-- 부스스트랩은 팝퍼아래에 -->
+<script src="js/script.js"></script>
+</body>
+</html>
