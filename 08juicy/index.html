@@ -3,21 +3,23 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>쥬씨 부트스트랩</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@500&family=Jua&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/all.css"><!-- 폰트어썸용 -->
 </head>
 <body>
 	<div class="bg-main"> <!-- 헤더 -->
 		<div class="container">
-			<nav class="navbar navbar-expand-sm  navbar-dark">
+			<nav class="navbar navbar-expand-md  navbar-dark">
 				<!-- logo -->
 				<a href="#" class="navbar-brand"><img src="images/logo.png" alt="메인로고"></a>
 				<!-- 토글메뉴 -->
-				<div class="nav-bar-toggler">
-					<i class="fa fa-bars"></i>
+				<div class="navbar-toggler" data-toggle="collapse" data-target="#topMenu">
+					<i class="fas fa-bars"></i>
 				</div>
 				<!-- 탑메뉴 -->
 				<div id="topMenu" class="collapse navbar-collapse">
@@ -136,6 +138,31 @@
 	<section class="mainbanner"><!-- 배너 -->
 			<img src="images/main_banner.jpg" alt="">
 	</section>
+
+	<footer class="bg-dGray py-5 "> <!-- 푸터 -->
+		<div class="container clearfix">
+			<img src="images/footer_logo.png" alt="">
+			<div class="fbox1">
+				<h3>THE ORIGINAL NO1.JUICY!</h3>
+		     	<p class="text-lGray a1-font">상호 : 쥬씨주식회사 | 대표 : 윤석제<br>
+				주소 : 서울특별시 성동구 왕십리로 16가길 24 4층 (서울특별시 성동구 성수동 1가 656-1835 4층)<br>
+				사업자번호 : 720-81-00137 | 전화번호 : 02-966-1028 / 전국대표번호 : 1522-1028<br>
+				영남사무소 : 부산광역시 수영구 광안2동 203-6 신화빌딩 5층 (TEL : 1599-1028 / FAX : 051-754-0109)</p>
+			</div>
+			<div class="fbox2 ">
+				<h3>FOLLOW ME!</h3>
+				<ul class="clearfix">
+					<li>
+						<a href="#"><img src="images/footer_sns02.png" alt=""></a>
+					</li>
+					<li>
+						<a href="#"><img src="images/footer_sns01.png" alt=""></a>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+	</footer>
 
 <script src="js/jquery-3.1.1.min.js"></script>
 <script src="js/jquery.bxslider.js"></script>

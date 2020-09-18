@@ -10,15 +10,19 @@ img{display: block;}
 
 
 /*요소*/
-.bg-main,.btn-main{background: #ec0927;}
+.bg-main{background: #ec0927;}
+.bg-dGray{background: #3e3e3e;}
 .bg-main-font{color: #ec0927;}
 .a1-font{font-family: 'Gothic A1', sans-serif;}
+.text-lGray{color: #a1a1a1;}
 
 .container .bx-wrapper{
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
     box-shadow: none;
     border: none;}
+
+.fa-bars{transform: scale(1.5); }
 
 /*메뉴바*/
 #topMenu li{font-size: 25px;margin-right: 5px;}
@@ -27,6 +31,8 @@ img{display: block;}
 /*그레이 배경*/
 .bg-gray{background: #f2f2f2}
 
+
+/*1.메인 =====================================================================*/
 /*메인-이벤트*/
 .mainevent>h3{text-align: center;}
 .card-body h5,.card-body p{font-family: 'Gothic A1', sans-serif;}
@@ -56,3 +62,23 @@ img{display: block;}
 /*배너*/
 .mainbanner{width: 100%; margin: 0 auto;}
 .mainbanner img{width: 100%;}
+
+/*푸터*/
+footer>.container>img{float: left; margin-right: 60px; padding-top: 35px;}
+footer>.container>.fbox1{float: left;}
+footer>.container>.fbox2{float: right;}
+footer>.container>.fbox1>h3,
+footer>.container>.fbox2>h3{
+	font-style: italic; font-weight: bold;
+	font-family: 'Gothic A1', sans-serif;
+	color: #a1a1a1;
+	}
+footer>.container>.fbox2 ul li{float: right;margin-left: 20px;}
+footer>.container>.fbox1>p{
+	letter-spacing: -1px; 
+	font-family: 'Gothic A1', sans-serif;}
+/*=====================================================================*/
+
+/*2.쥬씨강점 =====================================================================*/
+.sub01-main{width: 100%;}
+.sub01-main img{width: 100%;}
