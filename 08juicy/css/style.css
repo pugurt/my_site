@@ -35,6 +35,8 @@ img{display: block;}
 /*1.메인 =====================================================================*/
 /*메인-이벤트*/
 .mainevent>h3{text-align: center;}
+.card{overflow: hidden;}
+.card>img:hover{transform: scale(1.1);transition: 0.3s;}
 .card-body h5,.card-body p{font-family: 'Gothic A1', sans-serif;}
 
 /*메인-메뉴*/
@@ -51,6 +53,7 @@ img{display: block;}
 	}
 .mainmenu .row .menuTxt:after{content: "";width: 99%;height: 2px;background: #333; display: block;}
 .mainmenu .row .mainMwrap1 img{float: left;}
+.mainmenu .row .mainMwrap1 img:hover{transform: scale(1.05); transition: 0.3s;}
 
 .mainmenu .row .mainMwrap1 .mainMbox1{
 		height: 230px;
@@ -74,6 +77,7 @@ footer>.container>.fbox2>h3{
 	color: #a1a1a1;
 	}
 footer>.container>.fbox2 ul li{float: right;margin-left: 20px;}
+footer>.container>.fbox2 ul li img:hover{transform: scale(1.1); transition: 0.3s;}
 footer>.container>.fbox1>p{
 	letter-spacing: -1px; 
 	font-family: 'Gothic A1', sans-serif;}
@@ -81,4 +85,36 @@ footer>.container>.fbox1>p{
 
 /*2.쥬씨강점 =====================================================================*/
 .sub01-main{width: 100%;}
-.sub01-main img{width: 100%;}
+.sub01-main>ul{margin-bottom:0;}
+.sub01-main>ul>li img{position: absolute; z-index: 99;}
+.sub01-main>ul>li:nth-child(1) img{right: 500px;filter: drop-shadow(5px 5px 5px #755948); 
+	animation : fruOne 1s ease-out alternate forwards;}
+	@keyframes fruOne{
+		0%{top: 0;}
+		100%{top: 50%;}
+	}
+.sub01-main>ul>li:nth-child(2) img{right: 200px;filter: drop-shadow(5px 5px 5px #755948); 
+	animation : fruTwo 0.9s ease-out alternate forwards;}
+	@keyframes fruTwo{
+		0%{top: 0;}
+		100%{top: 100%;}
+	}
+.sub01-main>ul>li:nth-child(3) img{left: 200px;filter: drop-shadow(5px 5px 5px #755948); 
+	animation : fruThree 0.9s ease-out alternate forwards;}
+	@keyframes fruThree{
+		0%{top: 0;}
+		100%{top: 50%;}
+	}
+.sub01-main>ul>li:nth-child(4) img{left: 200px;filter: drop-shadow(5px 5px 5px #755948); 
+	animation : fruFour 0.9s ease-out alternate forwards;}
+	@keyframes fruFour{
+		0%{top: 0;}
+		100%{top: 50%;}
+	}
+.sub01-main>ul>li:nth-child(5) img{left: 0px;filter: drop-shadow(5px 5px 5px #755948); 
+	animation : fruFive 0.9s ease-out alternate forwards;}
+	@keyframes fruFive{
+		0%{top: 0;}
+		100%{top: 50%;}
+	}
+.sub01-main>img{width: 100%;}
