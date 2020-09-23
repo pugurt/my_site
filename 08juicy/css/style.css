@@ -105,16 +105,16 @@ footer>.container>.fbox1>p{
 		0%{top: 0;}
 		100%{top: 50%;}
 	}
-.sub01-main>ul>li:nth-child(4) img{left: 200px;filter: drop-shadow(5px 5px 5px #755948); 
+.sub01-main>ul>li:nth-child(4) img{left: 0px;filter: drop-shadow(5px 5px 5px #755948); 
 	animation : fruFour 0.9s ease-out alternate forwards;}
 	@keyframes fruFour{
 		0%{top: 0;}
-		100%{top: 50%;}
+		100%{top: 90%;}
 	}
-.sub01-main>ul>li:nth-child(5) img{left: 0px;filter: drop-shadow(5px 5px 5px #755948); 
-	animation : fruFive 0.9s ease-out alternate forwards;}
+.sub01-main>ul>li:nth-child(5) img{right: 500px;filter: drop-shadow(5px 5px 5px #755948); 
+	animation : fruFive 1s ease-out alternate forwards infinite;}
 	@keyframes fruFive{
-		0%{top: 0;}
-		100%{top: 50%;}
+		0%{top: 125%;}
+		100%{top: 130%;}
 	}
 .sub01-main>img{width: 100%;}
