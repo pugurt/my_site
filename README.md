@@ -4,7 +4,8 @@
 03collage - https://pugurt.github.io/my_site/03collage <br>
 04dribble - https://pugurt.github.io/my_site/04dribble <br>
 05site - https://pugurt.github.io/my_site/05site/index.html<br>
-06AnimalCrossing - https://pugurt.github.io/my_site/06ac_site/index_r<br>
-07fullpage - https://pugurt.github.io/my_site/07full_page/index<br>
+06AnimalCrossing - https://pugurt.github.io/my_site/06ac_site/index_r.html<br>
+07fullpage - https://pugurt.github.io/my_site/07full_page/index.html<br>
+08juicy - https://pugurt.github.io/my_site/08juicy/index.html
 
 
