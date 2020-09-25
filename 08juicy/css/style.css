@@ -118,15 +118,24 @@ footer>.container>.fbox1>p{
 		0%{top: 125%;}
 		100%{top: 130%;}
 	}
-.sub01-main>img,.sub03-main>img{width: 100%;}
+.sub01-main>img,.sub03-main .sub03-title>img{width: 100%;}
 
 /*공지사항*/
-.sub03-main{position: relative;}
-.sub03-main .sub3in{position: absolute; text-align: center;
+.sub03-main .sub03-title{position: relative;}
+.sub03-main .sub03-title .sub3in{position: absolute; text-align: center;
 		transform: translate(-50%,-50%);top: 60%;left: 50%;}
-		.sub03-main .sub3in h1{border-bottom: 2px solid #ec0927;}
-		.sub03-main .sub3in p{font-weight: bold;}
+		.sub03-title .sub3in h1{border-bottom: 2px solid #ec0927;}
+		.sub03-title .sub3in p{font-weight: bold;}
+.sub03-main .container{margin-bottom: 50px;}
+.sub03-main .container ul{margin: 0;padding: 20px 0;}
+.sub03-main .container ul li:nth-child(1){float: left;font-size: 1.5em;}
+.sub03-main .container ul li span{color: #ec0927;}
+.sub03-main .container ul li:nth-child(2){float: right;}
 .table tr th,
 .table tr td,
-.table tr td a{
-	font-family: 'Gothic A1', sans-serif;}
+.table tr td a{font-family: 'Gothic A1', sans-serif;}
+
+	/*검색*/
+	.sub03-main .searchBtn{width: 90px; color: white;font-weight: bold; border-radius: 5px}
+	.sub03-main .searchLine{border: 1px solid #979797; border-radius: 5px;}
+	.sub03-main button{border: 2px solid #ec0927 !important}
