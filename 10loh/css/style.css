@@ -36,7 +36,7 @@ html{scroll-behavior: smooth;}/*스무스스크롤인데 안...쓰지않을까?*
 .wrapsection{width: 1000px; margin: 0 auto; position: relative;}
 
 /*사이드*/
-.nav{width: 200px;height: 100%; padding-top: 60px;background: #f8f8f8; position: fixed;z-index: 1;}
+.nav{width: 200px;height: 100%; padding-top: 60px;background: #f8f8f8; position: fixed;z-index: 50;}
 .navlogo{width: 200px;height: 120px; background: #080808; position: relative;}
 .navlogo img{position: absolute;top: 35px;left: 15px;}
 .navlogo p{position: absolute;top: 40px;left: 65px; color: #fff;letter-spacing: -1px;font-weight: 800;}
@@ -159,6 +159,7 @@ html{scroll-behavior: smooth;}/*스무스스크롤인데 안...쓰지않을까?*
 /*캐릭터 창*/
 .sub_character{position: relative;}
 .sub_character ul{padding-top: 20px;}
+.sub_character>ul>li{cursor: pointer;}
 .sub_character>ul>li,
 .cha-btn-hover ul li{float: left; margin-right: 2.5px;}
 .sub_character>ul>li:last-child,
@@ -171,9 +172,9 @@ html{scroll-behavior: smooth;}/*스무스스크롤인데 안...쓰지않을까?*
 .sub_section_wrap div img:nth-child(2){right: 0px;}
 .sub_section_wrap div>iframe{position: absolute; bottom: 80px;right: 0;}
 
-.sub_char2,.sub_char3,
-.sub_char4,.sub_char5,
-.cha-btn-hover>ul>li:nth-child(2),
-.cha-btn-hover>ul>li:nth-child(3),
-.cha-btn-hover>ul>li:nth-child(4),
-.cha-btn-hover>ul>li:nth-child(5){display: none;}
+
+
+
+/*1. 아발론 툰 페이지 제작
+  2. 스토리 배경이미지 길게 다시 제작하기
+  3. 반응형 고민해보기*/
