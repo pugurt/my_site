@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>스토리_음 사이즈를 어떻게 하지</title>
+	<title>스토리</title>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet"><!-- 구글폰트 -->
@@ -15,7 +15,7 @@
 	<div class="wrap"><!-- 전체 쌈 -->
 		<header class="header"> <!-- 탑헤더 -->
 			<div class="headerbox clearfix">
-				<a href="#"><img src="images/main_Tlogo.png" alt="탑로고"></a>
+				<a href="https://pugurt.github.io/my_site/10loh/index.html"><img src="images/main_Tlogo.png" alt="탑로고"></a>
                 <form>
             		<fieldset class="clearfix">
             			<input type="text" placeholder="검색어를 입력해주세요.">
@@ -37,25 +37,26 @@
 					<img src="images/main_side_icon.png" alt="사이드로고이미지">
 					<p>로드오브히어로즈<span>Clover games</span></p>
 				</div>
+
 				<div class="navlist"> <!-- 카테고리 리스트 -->
 					<ul>
 						<li>◆ 게임소식
 							<ul>
-								<li><a href="#">- 공지사항</a></li>
-								<li><a href="#">- 이벤트</a></li>
+								<li><a href="https://pugurt.github.io/my_site/10loh/in_notice.html">- 공지사항</a></li>
+								<li><a href="https://pugurt.github.io/my_site/10loh/in_event.html">- 이벤트</a></li>
 							</ul>
 						</li>
 						<li>◆ 게임가이드
 							<ul>
-								<li><a href="#">- 캐릭터소개</a></li>
-								<li><a href="#">- 스토리</a></li>
+								<li><a href="https://pugurt.github.io/my_site/10loh/in_character.html">- 캐릭터소개</a></li>
+								<li><a href="https://pugurt.github.io/my_site/10loh/in_story.html">- 스토리</a></li>
 								<li><a href="#">- 조작가이드</a></li>
 							</ul>
 						</li>
 						<li>◆ 공식만화
 							<ul>
 								<li>
-									<a href="#">- 아발론툰</a>
+									<a href="https://pugurt.github.io/my_site/10loh/in_toon.html">- 아발론툰</a>
 								</li>
 							</ul>
 						</li>
@@ -68,6 +69,7 @@
 						</li>
 					</ul>
 				</div><!-- 카테고리 리스트 -->
+
 				<footer class="footer"> <!-- 푸터 -->
 					<div class="footer-in">
 						<img src="images/footer_img.png" alt="클로버게임즈배너">
@@ -78,7 +80,23 @@
 
 			</nav><!-- 사이드 카테고리 -->
 			<section class="section"><!-- 섹션 -->
-				<img src="images/sub_story.jpg" alt="스토리">
+				<div class="list_banner"> <!-- 상단배너 -->
+					<img src="images/sub_banner_txt5.png" alt="글자">	
+					<img src="images/sub_banner2.jpg" alt="배너배경">	
+				</div>
+				<div class="sub-list">
+					<div class="sub_evet"> <!-- 공지사항 -->
+							<div class="gal-tag clearfix">
+								<h3>아발론툰</h3>
+								<p>홈 > 게임가이드 > <span>스토리</span></p>
+							</div>
+							<ul>
+								<img src="images/sub_story_760.jpg" alt="">
+							</ul>
+							
+				</div><!-- 공지사항 -->
+				</div>
+				
 			</section><!-- 섹션 -->
 		</div><!-- 탑아래묶음 -->
 		
@@ -88,15 +106,6 @@
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
 	<script src="https://kit.fontawesome.com/319f6f33b3.js" crossorigin="anonymous"></script><!-- 폰트어썸 -->
-	<script>
-		$(document).ready(function(){
-			$(".mSlider").bxSlider({
-				auto:true,
-				controls:false,
-				ouchEnabled:false
-
-			});
-		});
-	</script>
+	<script src="js/script.js"></script>
 </body>
 </html>

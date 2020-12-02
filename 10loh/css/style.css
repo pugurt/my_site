@@ -57,7 +57,7 @@ html{scroll-behavior: smooth;}/*스무스스크롤인데 안...쓰지않을까?*
 	.footer a{color: #FFF;}
 
 /*섹션*/
-.section{width: 800px;position: absolute;right: 0;top: 60px;margin-bottom: 40px;}
+.section{width: 800px;position: absolute;right: 0;top: 60px;margin-bottom: 30px;}
 
 /*---------------------기본----------------------------------------------------*/
 /*★MAIN*/
@@ -143,7 +143,7 @@ html{scroll-behavior: smooth;}/*스무스스크롤인데 안...쓰지않을까?*
 .gal-list-tag ul li:nth-child(2){width: 15%;}
 
 /*이벤트*/
-.sub-list>.sub_evet>ul>li>a{float: left; width: 80%;color: #656565;}
+.sub-list>.sub_evet>ul>li>a{float: left; width: 100%;color: #656565;}
 .sub-list>.sub_evet>ul>li>p{color: #656565;}
 
 /*겔러리 리스트*/
@@ -173,8 +173,3 @@ html{scroll-behavior: smooth;}/*스무스스크롤인데 안...쓰지않을까?*
 .sub_section_wrap div>iframe{position: absolute; bottom: 80px;right: 0;}
 
 
-
-
-/*1. 아발론 툰 페이지 제작
-  2. 스토리 배경이미지 길게 다시 제작하기
-  3. 반응형 고민해보기*/
