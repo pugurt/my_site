@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="js/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+	<!-- <div class="nyam">
+		<img src="images/sub_charali1.jpg" id="img" onclick="change()" alt="1">
+		<img src="images/sub_charali1_h.jpg" alt="2">
+	</div>
+	<script>
+		function change(){
+			document.getElementById("img").src="images/sub_charali1_h.jpg"
+		}
+	</script> -->
+	<div class="list">
+		<img id="img1" src="images/sub_charali1.jpg" alt="1">
+		<img id="img2" src="images/sub_charali1_h.jpg" alt="2">
+		<img id="img3" src="images/sub_charali1_mo.jpg" alt="3">
+	</div>
+	<script>
+		$(document).ready(function(){
+			$("#img3").show(); //3은 흑백
+			$("#img2").hide(); //2는 배경까맘
+			$("#img1").hide(); //1은 평범한
+
+			$("#img3").mouseover(function(){
+				$("#img1").show();
+				$("#img2").hide();
+				$("#img3").hide();
+			});
+			$("#img1").mouseout(function(){
+				$("#img1").hide();
+				$("#img2").hide();
+				$("#img3").show();
+			});
+
+			$("#img1").click(function(){
+				$("#img1").hide();
+				$("#img2").show();
+				$("#img3").hide();
+			});
+
+			$("#img2").click(function(){
+				$("#img1").hide();
+				$("#img2").hide();
+				$("#img3").show();
+			});
+		});
+	</script>
+</body>
+</html>
